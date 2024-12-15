@@ -32,7 +32,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li> --}}
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#kontak">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>

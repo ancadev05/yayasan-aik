@@ -73,6 +73,10 @@
         @include('sections.team')
         {{-- /team --}}
 
+        {{-- kontak --}}
+        @include('sections.kontak')
+        {{-- /kontak --}}
+
     </main>
 
     {{-- footer --}}
