@@ -1,23 +1,22 @@
-<section id="program" class="program section">
+<section id="program" class="about section">
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Program</h2>
         <div><span>Daftar</span> <span class="description-title">Program Unggulan</span></div>
     </div><!-- End Section Title -->
 
-    <div class="album py-5 bg-body-tertiary">
+    <div class="album">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-    
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
               <div class="card shadow-sm">
                 <img src="{{ asset('/bootslander/assets/img/gallery/gallery-1.jpg') }}" class="img-fluid" alt="...">
                 <div class="card-body">
-                    <h3>Wakaf Al Quran</h3>
+                    <h3 class="fw-bold">Wakaf Al Quran</h3>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-success">Lihat</button>
+                      <a href="{{ url('/program-swho') }}" class="btn btn-sm btn-outline-success">Lihat</a>
                     </div>
                     <small class="text-body-secondary"><i class="bi bi-share"></i> Share</small>
                   </div>

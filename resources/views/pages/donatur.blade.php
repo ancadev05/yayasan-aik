@@ -7,7 +7,7 @@
 @section('content')
     <section class="about section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <h3>Daftar Donatur</h3>
+            <h3 class="fw-bold">Daftar Donatur</h3>
             <div class="table-responsive">
                 <table class="table">
                     <thead>

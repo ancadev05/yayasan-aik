@@ -9,4 +9,8 @@ class PagesContrller extends Controller
     public function donatur(){
         return view('pages.donatur');
     }
+
+    public function programShow(){
+        return view('pages.program-show');
+    }
 }

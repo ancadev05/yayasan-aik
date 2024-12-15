@@ -21,3 +21,4 @@ Route::get('/', function () {
 
 Route::get('/program', [ProgramController::class, 'index']);
 Route::get('/donatur', [PagesContrller::class, 'donatur']);
+Route::get('/program-swho', [PagesContrller::class, 'programShow']);
