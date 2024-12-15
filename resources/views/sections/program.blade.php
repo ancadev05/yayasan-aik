@@ -1,4 +1,4 @@
-<section id="program" class="about section">
+<section id="program" class="about section light-background">
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Program</h2>
@@ -13,7 +13,7 @@
                 <img src="{{ asset('/bootslander/assets/img/gallery/gallery-1.jpg') }}" class="img-fluid" alt="...">
                 <div class="card-body">
                     <h3 class="fw-bold">Wakaf Al Quran</h3>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  {{-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> --}}
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <a href="{{ url('/program-swho') }}" class="btn btn-sm btn-outline-success">Lihat</a>

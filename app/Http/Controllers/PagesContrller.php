@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 class PagesContrller extends Controller
 {
+    public function about(){
+        return view('pages.about');
+    }
     public function donatur(){
         return view('pages.donatur');
     }

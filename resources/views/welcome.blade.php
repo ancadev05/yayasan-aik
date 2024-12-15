@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - Bootslander Bootstrap Template</title>
+    <title>Yayasan Amal Islam Kariango</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -53,13 +53,13 @@
         @include('sections.about')
         <!-- /About Section -->
 
-        {{-- program --}}
-        @include('sections.program')
-        {{-- /program --}}
-
         <!-- Stats Section -->
         @include('sections.stats')
         <!-- End Stats Item -->
+
+        {{-- program --}}
+        @include('sections.program')
+        {{-- /program --}}
 
         <!-- Gallery Section -->
         @include('sections.galery')

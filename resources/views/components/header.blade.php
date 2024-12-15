@@ -9,10 +9,10 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="{{ url('/') }}" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="{{ url('/donatur') }}">Donator</a></li>
+          <li><a href="{{ url('/') }}" class="{{ Request::is('/') ? 'active' : '' }}">Home</a></li>
+          <li><a href="{{ url('/donatur') }}" class="{{ Request::is('donatur') ? 'active' : '' }}">Donatur</a></li>
           <li><a href="#gallery">Gallery</a></li>
+          <li><a href="{{ url('/about') }}" class="{{ Request::is('about') ? 'active' : '' }}">Tentang Kami</a></li>
           <li><a href="#team">Team</a></li>
           {{-- <li><a href="#pricing">Pricing</a></li> --}}
           {{-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>

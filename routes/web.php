@@ -26,6 +26,7 @@ Route::get('/bismillah', function () {
 
 Route::resource('/program', ProgramController::class);
 
-// Route::get('/program', [ProgramController::class, 'index']);
+Route::get('/about', [PagesContrller::class, 'about']);
 Route::get('/donatur', [PagesContrller::class, 'donatur']);
+
 Route::get('/program-swho', [PagesContrller::class, 'programShow']);

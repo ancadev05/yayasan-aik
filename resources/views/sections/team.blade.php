@@ -4,7 +4,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>Team</h2>
-      <div><span>Check Our</span> <span class="description-title">Team</span></div>
+      <div><span class="description-title">Pengurus Yayasan</span></div>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -16,13 +16,13 @@
             <div class="pic"><img src="{{ asset('/bootslander/assets/img/team/team-1.jpg') }}" class="img-fluid" alt=""></div>
             <div class="member-info">
               <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <div class="social">
+              <span>Kepala Yayasan</span>
+              {{-- <div class="social">
                 <a href=""><i class="bi bi-twitter-x"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-instagram"></i></a>
                 <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+              </div> --}}
             </div>
           </div>
         </div><!-- End Team Member -->
@@ -33,12 +33,12 @@
             <div class="member-info">
               <h4>Sarah Jhonson</h4>
               <span>Product Manager</span>
-              <div class="social">
+              {{-- <div class="social">
                 <a href=""><i class="bi bi-twitter-x"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-instagram"></i></a>
                 <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+              </div> --}}
             </div>
           </div>
         </div><!-- End Team Member -->
@@ -49,12 +49,12 @@
             <div class="member-info">
               <h4>William Anderson</h4>
               <span>CTO</span>
-              <div class="social">
+              {{-- <div class="social">
                 <a href=""><i class="bi bi-twitter-x"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-instagram"></i></a>
                 <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+              </div> --}}
             </div>
           </div>
         </div><!-- End Team Member -->

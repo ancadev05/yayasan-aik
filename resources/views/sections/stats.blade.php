@@ -1,4 +1,4 @@
-<section id="stats" class="stats section light-background">
+<section id="stats" class="stats section">
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
