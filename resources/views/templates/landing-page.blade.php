@@ -49,29 +49,7 @@
         @include('sections.hero')
         <!-- /Hero Section -->
 
-        <!-- About Section -->
-        @include('sections.about')
-        <!-- /About Section -->
-
-        {{-- program --}}
-        @include('sections.program')
-        {{-- /program --}}
-
-        <!-- Stats Section -->
-        @include('sections.stats')
-        <!-- End Stats Item -->
-
-        <!-- Gallery Section -->
-        @include('sections.galery')
-        <!-- /Gallery Section -->
-
-        <!-- Testimonials Section -->
-        @include('sections.testimonials')
-        <!-- /Testimonials Section -->
-
-        {{-- team --}}
-        @include('sections.team')
-        {{-- /team --}}
+        @yield('content')
 
     </main>
 
