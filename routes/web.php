@@ -18,7 +18,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/bismillah', function () {
+    return view('admin.dashboard');
+});
 
-Route::get('/program', [ProgramController::class, 'index']);
+
+
+Route::resource('/program', ProgramController::class);
+
+// Route::get('/program', [ProgramController::class, 'index']);
 Route::get('/donatur', [PagesContrller::class, 'donatur']);
 Route::get('/program-swho', [PagesContrller::class, 'programShow']);

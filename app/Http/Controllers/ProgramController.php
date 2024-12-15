@@ -11,7 +11,7 @@ class ProgramController extends Controller
      */
     public function index()
     {
-        //
+        return view('program.program-index');
     }
 
     /**
@@ -19,7 +19,7 @@ class ProgramController extends Controller
      */
     public function create()
     {
-        //
+        return view('program.program-create');
     }
 
     /**
@@ -27,7 +27,7 @@ class ProgramController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd('masuk');
     }
 
     /**
