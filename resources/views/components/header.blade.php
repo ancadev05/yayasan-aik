@@ -11,6 +11,7 @@
         <ul>
           <li><a href="{{ url('/') }}" class="{{ Request::is('/') ? 'active' : '' }}">Home</a></li>
           <li><a href="{{ url('/donatur') }}" class="{{ Request::is('donatur') ? 'active' : '' }}">Donatur</a></li>
+          <li><a href="{{ url('/daftar-program') }}" class="{{ Request::is('daftar-program') ? 'active' : '' }}">Program</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="{{ url('/about') }}" class="{{ Request::is('about') ? 'active' : '' }}">Tentang Kami</a></li>
           <li><a href="#team">Team</a></li>

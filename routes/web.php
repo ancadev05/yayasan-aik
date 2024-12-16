@@ -28,5 +28,6 @@ Route::resource('/program', ProgramController::class);
 
 Route::get('/about', [PagesContrller::class, 'about']);
 Route::get('/donatur', [PagesContrller::class, 'donatur']);
+Route::get('/daftar-program', [PagesContrller::class, 'daftarProgram']);
 
 Route::get('/program-swho', [PagesContrller::class, 'programShow']);

@@ -64,6 +64,9 @@
     <!-- Preloader -->
     {{-- <div id="preloader"></div> --}}
 
+    {{-- jquery --}}
+    <script src="{{ asset('/vendor/jquery/jquery-3.7.1.min.js') }}"></script>
+
     <!-- Vendor JS Files -->
     <script src="{{ asset('bootslander/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('bootslander/assets/vendor/php-email-form/validate.js') }}"></script>
@@ -74,6 +77,9 @@
 
     <!-- Main JS File -->
     <script src="{{ asset('bootslander/assets/js/main.js') }}"></script>
+
+    {{-- script --}}
+    @yield('script')
 
 </body>
 
