@@ -5,6 +5,14 @@
 @endsection
 
 @section('content')
+    <section>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-lg btn-warning" data-bs-toggle="modal" data-bs-target="#donasi">Donasi Sekarang</button>
+            </div>
+        </div>
+    </section>
+
     <section id="program" class="about section light-background">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
@@ -38,8 +46,43 @@
         </div>
     </section>
 
+    {{-- modal donasi --}}
+    <div class="modal fade" id="donasi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Data Donatur</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    {{-- <form action="" method="post"> --}}
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="nama" name="nama">
+                    </div>
+                    <div class="mb-3">
+                        <label for="alamat" class="form-label">Alamat</label>
+                        <input type="text" class="form-control" id="alamat" name="alamat">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pekerjaan" class="form-label">Pekerjaan</label>
+                        <input type="text" class="form-control" id="pekerjaan" name="pekerjaan">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">No. Handphone</label>
+                        <input type="text" class="form-control" id="nama" name="nama">
+                    </div>
+                    {{-- </form> --}}
+                </div>
+                <div class="modal-footer">
+                    {{-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> --}}
+                    <button id="donasi" class="btn btn-warning" onclick="adminDonasi()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Modal -->
+    <!-- Modal share -->
     <div class="modal fade" id="share" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -52,13 +95,10 @@
                         <button id="share-whatsapp" class="btn btn-lg btn-success"><i class="bi bi-whatsapp"></i></button>
                         <button id="share-instagram" class="btn btn-lg btn-danger mx-3"><i
                                 class="bi bi-instagram"></i></button>
-                        <button id="share-facebook" class="btn btn-lg btn-primary"><i class="bi bi-facebook"></i></button>
+                        <button id="share-facebook" class="btn btn-lg btn-primary"><i
+                                class="bi bi-facebook"></i></button>
                     </div>
                 </div>
-                {{-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div> --}}
             </div>
         </div>
     </div>
@@ -66,7 +106,16 @@
 
 @section('script')
     <script>
+        function adminDonasi() {
+            var nomorWA = "6285299001213";
+            var nama = document.getElementById("nama").value;
+            var pesan = "Bismillah, \nSaya *" + nama + "* tertarik dengan program ini : \n" + window.location.href;
+            var url = "https://wa.me/" + nomorWA + "?text=" + encodeURIComponent(pesan);
+            window.open(url, '_blank');
+        }
+
         $(document).ready(function() {
+
             var url = window.location.href; // URL halaman yang akan dibagikan
             var title = document.title; // Judul halaman
             var message = 'Yuk tebar kebaikan: ' + url;
