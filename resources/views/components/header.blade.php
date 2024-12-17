@@ -3,8 +3,9 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Logo</h1>
+        <img src="{{ asset('/assets/img/logo-yayasan.png') }}" alt="">
+        {{-- <img src="{{ asset('/bootslander/assets/img/logo.png') }}" alt=""> --}}
+        {{-- <h1 class="sitename">Logo</h1> --}}
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -12,7 +13,7 @@
           <li><a href="{{ url('/') }}" class="{{ Request::is('/') ? 'active' : '' }}">Home</a></li>
           <li><a href="{{ url('/donatur') }}" class="{{ Request::is('donatur') ? 'active' : '' }}">Donatur</a></li>
           <li><a href="{{ url('/daftar-program') }}" class="{{ Request::is('daftar-program') ? 'active' : '' }}">Program</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="{{ url('/galery') }}" class="{{ Request::is('galery') ? 'active' : '' }}">Galery</a></li>
           <li><a href="{{ url('/about') }}" class="{{ Request::is('about') ? 'active' : '' }}">Tentang Kami</a></li>
           <li><a href="#team">Team</a></li>
           {{-- <li><a href="#pricing">Pricing</a></li> --}}

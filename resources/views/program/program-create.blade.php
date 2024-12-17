@@ -29,7 +29,7 @@
                     <input type="file" class="form-control" id="gambar_program" name="gambar_program">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Simpan</button>
+            <button type="submit" class="btn btn-primary">Tambah</button>
         </form>
 
     </div>

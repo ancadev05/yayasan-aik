@@ -1,5 +1,5 @@
 <section id="hero" class="hero section dark-background">
-    <img src="assets/img/hero-bg-2.jpg" alt="" class="hero-bg">
+    <img src="{{ asset('bootslander/assets/img/hero-bg-2.jpg') }}" alt="" class="hero-bg">
 
     <div class="container">
         <div class="row gy-4 justify-content-between">
@@ -9,7 +9,7 @@
 
             <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
                 <h1>Yayasan Amal Islam Kariango</h1>
-                <p>We are team of talented designers making websites with Bootstrap</p>
+                <p>Raih pahala jariyah dengan membantu sesama!</p>
             </div>
 
         </div>

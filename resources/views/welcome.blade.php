@@ -6,11 +6,13 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Yayasan Amal Islam Kariango</title>
     <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="yayasan amal islam kariango, yayasan amal islam kariango">
 
     <!-- Favicons -->
-    <link href="{{ asset('/bootslander/assets/img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('/bootslander/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    {{-- <link href="{{ asset('/bootslander/assets/img/favicon.png') }}" rel="icon"> --}}
+    {{-- <link href="{{ asset('/bootslander/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon"> --}}
+    <link href="{{ asset('/assets/img/logo-yayasan.png') }}" rel="icon">
+    <link href="{{ asset('/assets/img/logo-yayasan.png') }}" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">

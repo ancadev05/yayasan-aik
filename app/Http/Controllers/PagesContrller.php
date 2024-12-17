@@ -12,6 +12,9 @@ class PagesContrller extends Controller
     public function donatur(){
         return view('pages.donatur');
     }
+    public function galery(){
+        return view('pages.galery');
+    }
 
     public function daftarProgram(){
         return view('pages.daftar-program');

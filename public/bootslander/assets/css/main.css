@@ -153,7 +153,7 @@ h6 {
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  /* padding: 20px 0; */
   transition: all 0.5s;
   z-index: 997;
 }
@@ -163,7 +163,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  /* max-height: 32px; */
+  max-height: 90px;
   margin-right: 8px;
 }
 
