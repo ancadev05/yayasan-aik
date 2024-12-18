@@ -5,15 +5,20 @@
 @endsection
 
 @section('content')
-    <section>
+    {{-- <section>
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="d-flex justify-content-center">
                 <button class="btn btn-lg btn-warning" data-bs-toggle="modal" data-bs-target="#donasi">Donasi Sekarang</button>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section id="program" class="about section">
+        <div class="container mb-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-lg btn-warning" data-bs-toggle="modal" data-bs-target="#donasi">Donasi Sekarang</button>
+            </div>
+        </div>
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
             <h2>Program</h2>
@@ -22,13 +27,31 @@
 
         <div class="album">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-3">
                     <div class="col">
                         <div class="card shadow-sm">
                             <img src="{{ asset('/bootslander/assets/img/gallery/gallery-1.jpg') }}" class="img-fluid"
                                 alt="...">
                             <div class="card-body">
-                                <h3 class="fw-bold">Wakaf Al Quran</h3>
+                                <h5 class="fw-bold">Wakaf Al Quran</h5>
+                                {{-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> --}}
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="{{ url('/program-swho') }}"
+                                            class="btn btn-sm btn-outline-success">Lihat</a>
+                                    </div>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
+                                        data-bs-target="#share"><i class="bi bi-share"></i> Share</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('/bootslander/assets/img/gallery/gallery-1.jpg') }}" class="img-fluid"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="fw-bold">Wakaf Al Quran</h5>
                                 {{-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> --}}
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">

@@ -48,7 +48,7 @@
     <main class="main">
 
         <!-- Hero Section -->
-        @include('sections.hero')
+        @include('sections.hero-2')
         <!-- /Hero Section -->
 
         @yield('content')
