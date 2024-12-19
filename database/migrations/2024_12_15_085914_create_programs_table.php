@@ -13,12 +13,13 @@ return new class extends Migration
     {
         Schema::create('programs', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
+            $table->string('title');
+            $table->string('slug');
             $table->text('deskripsi');
-            $table->string('gambar');
             $table->string('status');
             $table->string('jenis');
-            $table->string('ket');
+            $table->string('gambar_program')->nullable();
+            $table->string('ket')->nullable();
             $table->timestamps();
         });
     }

@@ -10,9 +10,10 @@
         <form action="{{ url('program') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="row mb-3">
-                <label for="nama_program" class="col-sm-2 col-form-label">Nama Program</label>
+                <label for="title" class="col-sm-2 col-form-label">Nama Program</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="nama_program" name="nama_program" value="{{ old('nama_program') }}" required>
+                    <input type="text" class="form-control" id="title" name="title"
+                        value="{{ old('nama_program') }}" required>
                 </div>
             </div>
 
@@ -24,13 +25,37 @@
             </div>
 
             <div class="row mb-3">
-                <label for="gambar_program" class="col-sm-2 col-form-label">Gambar</label>
+                <label for="gambar-program" class="col-sm-2 col-form-label">Gambar</label>
                 <div class="col-sm-10">
-                    <input type="file" class="form-control" id="gambar_program" name="gambar_program">
+                    <input type="file" class="form-control" id="gambar-program" name="gambar-program">
+                    <img id="preview_gambar" src="#" alt="Image Preview"
+                    style="display: none; width: 200px; height: auto;" class="mt-2">
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Tambah</button>
         </form>
 
     </div>
+@endsection
+
+@section('script')
+    <script>
+        $(document).ready(function() {
+            // menampilkan preview foto
+            $('#gambar-program').change(function() {
+                console.log('ok');
+                console.log(this.files[0]);
+                
+                
+                const file = this.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        $('#preview_gambar').attr('src', e.target.result).show();
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        })
+    </script>
 @endsection

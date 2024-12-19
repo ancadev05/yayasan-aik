@@ -28,42 +28,28 @@
         <div class="album">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('/bootslander/assets/img/gallery/gallery-1.jpg') }}" class="img-fluid"
-                                alt="...">
-                            <div class="card-body">
-                                <h5 class="fw-bold">Wakaf Al Quran</h5>
-                                {{-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> --}}
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="{{ url('/program-swho') }}"
-                                            class="btn btn-sm btn-outline-success">Lihat</a>
+                    @forelse ($programs as $item)
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="{{ asset('storage/gambar-program/' . $item->gambar_program) }}" class="img-fluid"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">{{ $item->title }}</h5>
+                                    {{-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> --}}
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="{{ url('/daftar-program/' . $item->slug) }}"
+                                                class="btn btn-sm btn-outline-success">Lihat</a>
+                                        </div>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#share"><i class="bi bi-share"></i> Share</button>
                                     </div>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
-                                        data-bs-target="#share"><i class="bi bi-share"></i> Share</button>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('/bootslander/assets/img/gallery/gallery-1.jpg') }}" class="img-fluid"
-                                alt="...">
-                            <div class="card-body">
-                                <h5 class="fw-bold">Wakaf Al Quran</h5>
-                                {{-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> --}}
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="{{ url('/program-swho') }}"
-                                            class="btn btn-sm btn-outline-success">Lihat</a>
-                                    </div>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
-                                        data-bs-target="#share"><i class="bi bi-share"></i> Share</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @empty
+                        <div class="alert alert-info">Tidak Ada Program</div>
+                    @endforelse
                 </div>
             </div>
         </div>

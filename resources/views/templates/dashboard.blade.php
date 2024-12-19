@@ -22,6 +22,9 @@
     {{-- jequery --}}
     <script src="{{ asset('/vendor/jquery/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ asset('/vendor/bootstrap5/js/bootstrap.bundle.min.js') }}"></script>
+
+    {{-- script --}}
+    @yield('script')
 </body>
 
 </html>

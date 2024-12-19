@@ -8,10 +8,16 @@
     <section class="section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="card shadow-sm">
-                <img src="{{ asset('/bootslander/assets/img/gallery/gallery-1.jpg') }}" class="img-fluid" alt="...">
+                <img src="{{ asset('storage/gambar-program/' . $program->gambar_program) }}" class="img-fluid" alt="...">
                 <div class="card-body">
-                    <h3 class="fw-bold mt-3">Wakaf Al Qur'an</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque fuga mollitia reprehenderit a omnis praesentium odit quo ad consectetur minus? Aut eius ratione asperiores distinctio, ducimus ipsum sed delectus consequatur sequi animi eligendi aperiam perspiciatis, magni libero voluptatibus, at fuga?</p>
+                    <h3 class="fw-bold mt-3">{{ $program->title }}</h3>
+                    <p>{{ $program->deskripsi }}</p>
+                </div>
+            </div>
+
+            <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-lg btn-warning" data-bs-toggle="modal" data-bs-target="#donasi">Donasi Sekarang</button>
                 </div>
             </div>
 

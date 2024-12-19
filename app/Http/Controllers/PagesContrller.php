@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Program;
 use Illuminate\Http\Request;
 
 class PagesContrller extends Controller
@@ -17,10 +18,13 @@ class PagesContrller extends Controller
     }
 
     public function daftarProgram(){
-        return view('pages.daftar-program');
+        $programs = Program::all();
+        return view('pages.daftar-program', compact('programs'));
     }
 
-    public function programShow(){
-        return view('pages.program-show');
+    public function programShow($slug){
+        // dd($slug);
+        $program = Program::where('slug', $slug)->first();
+        return view('pages.program-show', compact('program'));
     }
 }

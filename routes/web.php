@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/bismillah', function () {
+Route::get('/kariango', function () {
     return view('admin.dashboard');
 });
 
@@ -30,5 +30,6 @@ Route::get('/about', [PagesContrller::class, 'about']);
 Route::get('/donatur', [PagesContrller::class, 'donatur']);
 Route::get('/galery', [PagesContrller::class, 'galery']);
 Route::get('/daftar-program', [PagesContrller::class, 'daftarProgram']);
+Route::get('/daftar-program/{slug}', [PagesContrller::class, 'programShow']);
 
-Route::get('/program-swho', [PagesContrller::class, 'programShow']);
+// Route::get('/program-swho', [PagesContrller::class, 'programShow']);

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Program;
 use Illuminate\Http\Request;
 
 class ProgramController extends Controller
@@ -11,7 +12,8 @@ class ProgramController extends Controller
      */
     public function index()
     {
-        return view('program.program-index');
+        $programs = Program::all();
+        return view('program.program-index', compact('programs'));
     }
 
     /**
@@ -27,7 +29,32 @@ class ProgramController extends Controller
      */
     public function store(Request $request)
     {
-        dd('masuk');
+        $request->validate([
+            'title' => 'required',
+            'gambar_program' => 'file|image|mimes:jpg,jpeg,png,JPG,JPEG,PNG|max:2048'
+        ]);
+
+        // generate foto
+        $file_name = false;
+        // Jika user upload gambar
+        if ($request->hasFile('gambar-program')) {
+            // Validasi gambar
+            $file = $request->file('gambar-program'); // mengambil file dari form
+            $file_name = date('ymdhis') . '.' . $file->getClientOriginalExtension(); // meriname file, antisipasi nama file double. memberi nama file dengan gabung extensi
+            $file->storeAs('public/gambar-program/', $file_name); // memindahkan file ke folder public agar bisa diakses
+        }
+
+        $program = [
+            'title' => $request->title,
+            'deskripsi' => $request->deskripsi,
+            'status' => 'status',
+            'jenis' => 'jenis',
+            'gambar_program' => $file_name,
+        ];
+
+        Program::create($program);
+
+        return redirect('/program');
     }
 
     /**
