@@ -30,7 +30,7 @@
                 <div class="col-sm-10">
                     <input type="hidden" name="file_lama" value="{{ $program->gambar_program }}">
                     <input type="file" class="form-control" id="gambar-program" name="gambar-program">
-                    <img id="preview_gambar" src="{{ asset('storage/gambar-program/' . $program->gambar_program) }}" alt="Image Preview"
+                    <img id="preview_gambar" src="{{ asset('public/gambar-program/' . $program->gambar_program) }}" alt="Image Preview"
                     style="width: 200px; height: auto;" class="mt-2">
                 </div>
             </div>

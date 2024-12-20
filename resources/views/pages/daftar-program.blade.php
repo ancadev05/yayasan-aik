@@ -31,7 +31,7 @@
                     @forelse ($programs as $item)
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img src="{{ asset('storage/gambar-program/' . $item->gambar_program) }}" class="img-fluid"
+                                <img src="{{ asset('public/gambar-program/' . $item->gambar_program) }}" class="img-fluid"
                                     alt="...">
                                 <div class="card-body">
                                     <h5 class="fw-bold">{{ $item->title }}</h5>

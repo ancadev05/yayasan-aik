@@ -8,7 +8,7 @@
     <section class="section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="card shadow-sm">
-                <img src="{{ asset('storage/gambar-program/' . $program->gambar_program) }}" class="img-fluid" alt="...">
+                <img src="{{ asset('public/gambar-program/' . $program->gambar_program) }}" class="img-fluid" alt="...">
                 <div class="card-body">
                     <h3 class="fw-bold mt-3">{{ $program->title }}</h3>
                     <p>{{ $program->deskripsi }}</p>

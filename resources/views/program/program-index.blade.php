@@ -30,7 +30,7 @@
                     <tr>
                         <td>{{ $i++ }}</td>
                         <td>
-                            <img src="{{ asset('storage/gambar-program/' . $item->gambar_program) }}" width="150px" alt="...">
+                            <img src="{{ asset('public/gambar-program/' . $item->gambar_program) }}" width="150px" alt="...">
                         </td>
                         <td>{{ $item->title }}</td>
                         <td>{{ $item->deskripsi }}</td>
