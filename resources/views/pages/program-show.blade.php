@@ -17,7 +17,8 @@
 
             <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
                 <div class="d-flex justify-content-center">
-                    <button class="btn btn-lg btn-warning" data-bs-toggle="modal" data-bs-target="#donasi">Donasi Sekarang</button>
+                    <a href="https://wa.me/6285299001213" target="_blank" class="btn btn-success"><i class="bi bi-whatsapp"></i> Hubungi Admin Untuk Donasi</a>
+                    {{-- <button class="btn btn-lg btn-warning" data-bs-toggle="modal" data-bs-target="#donasi">Donasi Sekarang</button> --}}
                 </div>
             </div>
 
