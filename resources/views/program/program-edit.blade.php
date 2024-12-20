@@ -1,39 +1,41 @@
 @extends('templates.dashboard')
 
 @section('title')
-    Tambah Program
+    Edit Program
 @endsection
 
 @section('content')
     <div class="container">
-        <h3 class="mb-3">Tambah Program</h3>
-        <form action="{{ url('program') }}" method="POST" enctype="multipart/form-data">
+        <h3 class="mb-3">Edit Program</h3>
+        <form action="{{ url('program/' . $program->id) }}" method="POST" enctype="multipart/form-data">
             @csrf
+            @method('PUT')
             <div class="row mb-3">
                 <label for="title" class="col-sm-2 col-form-label">Nama Program</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="title" name="title"
-                        value="{{ old('nama_program') }}" required>
+                        value="{{ $program->title }}" required>
                 </div>
             </div>
 
             <div class="row mb-3">
                 <label for="deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
                 <div class="col-sm-10">
-                    <textarea type="text" class="form-control" id="deskripsi" name="deskripsi" rows="5" required>{{ old('deskripsi') }}</textarea>
+                    <textarea type="text" class="form-control" id="deskripsi" name="deskripsi" rows="5" required>{{ old('deskripsi', $program->deskripsi) }}</textarea>
                 </div>
             </div>
 
             <div class="row mb-3">
                 <label for="gambar-program" class="col-sm-2 col-form-label">Gambar</label>
                 <div class="col-sm-10">
+                    <input type="hidden" name="file_lama" value="{{ $program->gambar_program }}">
                     <input type="file" class="form-control" id="gambar-program" name="gambar-program">
-                    <img id="preview_gambar" src="#" alt="Image Preview"
-                    style="display: none; width: 200px; height: auto;" class="mt-2">
+                    <img id="preview_gambar" src="{{ asset('storage/gambar-program/' . $program->gambar_program) }}" alt="Image Preview"
+                    style="width: 200px; height: auto;" class="mt-2">
                 </div>
             </div>
             <a href="{{ url('program') }}" class="btn btn-sm btn-danger">Batal</a>
-            <button type="submit" class="btn btn-sm btn-primary">Tambah</button>
+            <button type="submit" class="btn btn-sm btn-primary">Update</button>
         </form>
 
     </div>

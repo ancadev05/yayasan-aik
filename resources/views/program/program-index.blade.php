@@ -35,8 +35,12 @@
                         <td>{{ $item->title }}</td>
                         <td>{{ $item->deskripsi }}</td>
                         <td>
-                            <button class="btn btn-sm btn-warning shadow-sm">Edit</button>
-                            <button class="btn btn-sm btn-danger shadow-sm">Hapus</button>
+                            <a href="{{ url('/program/' . $item->id . '/edit') }}" class="btn btn-sm btn-warning shadow-sm">Edit</a>
+                            <form action="{{ url('/program/' . $item->id) }}" method="post" class="d-inline">
+                                @csrf
+                                @method('delete')
+                                <button class="btn btn-sm btn-danger shadow-sm" onclick="return confirm('Apakah anda yakin ingin menghapus data ini?')">Hapus</button>
+                            </form>
                         </td>
                     </tr>
                 @empty
