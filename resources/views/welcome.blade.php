@@ -52,11 +52,11 @@
         <!-- /Hero Section -->
 
         <!-- About Section -->
-        @include('sections.about')
+        {{-- @include('sections.about') --}}
         <!-- /About Section -->
 
         <!-- Stats Section -->
-        @include('sections.stats')
+        {{-- @include('sections.stats') --}}
         <!-- End Stats Item -->
 
         {{-- program --}}
@@ -64,15 +64,15 @@
         {{-- /program --}}
 
         <!-- Gallery Section -->
-        @include('sections.galery')
+        {{-- @include('sections.galery') --}}
         <!-- /Gallery Section -->
 
         <!-- Testimonials Section -->
-        @include('sections.testimonials')
+        {{-- @include('sections.testimonials') --}}
         <!-- /Testimonials Section -->
 
         {{-- team --}}
-        @include('sections.team')
+        {{-- @include('sections.team') --}}
         {{-- /team --}}
 
         {{-- kontak --}}
