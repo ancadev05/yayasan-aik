@@ -9,6 +9,16 @@
 
     {{-- bootstrap --}}
     <link rel="stylesheet" href="{{ asset('/vendor/bootstrap5/css/bootstrap.min.css') }}">
+    {{-- ck editor --}}
+    <link rel="stylesheet" href="{{ asset('/vendor/ckeditor5/ckeditor5.css') }}">
+
+    <style>
+        .main-container {
+            width: 795px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        </style>
 </head>
 
 <body>
@@ -22,6 +32,9 @@
     {{-- jequery --}}
     <script src="{{ asset('/vendor/jquery/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ asset('/vendor/bootstrap5/js/bootstrap.bundle.min.js') }}"></script>
+
+    {{-- ckeditor --}}
+    <script src="{{ asset('/vendor/ckeditor5/ckeditor5.js') }}"></script>
 
     {{-- script --}}
     @yield('script')

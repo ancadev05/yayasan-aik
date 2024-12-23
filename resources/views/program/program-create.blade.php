@@ -36,6 +36,46 @@
             <button type="submit" class="btn btn-sm btn-primary">Tambah</button>
         </form>
 
+        <div class="main-container">
+            <div id="editor">
+                <p>Hello from CKEditor 5!</p>
+            </div>
+        </div>
+        <script type="importmap">
+            {
+                "imports": {
+                    "ckeditor5": "{{ asset('/vendor/ckeditor5/ckeditor5.css') }}",
+                    "ckeditor5/": "{{ asset('/vendor/) }}"
+                }
+            }
+        </script>
+        <script type="module">
+            import {
+                ClassicEditor,
+                Essentials,
+                Paragraph,
+                Bold,
+                Italic,
+                Font
+            } from 'ckeditor5';
+
+            ClassicEditor
+                .create( document.querySelector( '#editor' ), {
+                    licenseKey: '<YOUR_LICENSE_KEY>', // Or 'GPL'.
+                    plugins: [ Essentials, Paragraph, Bold, Italic, Font ],
+                    toolbar: [
+                        'undo', 'redo', '|', 'bold', 'italic', '|',
+                        'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor'
+                    ]
+                } )
+                .then( editor => {
+                    window.editor = editor;
+                } )
+                .catch( error => {
+                    console.error( error );
+                } );
+        </script>
+
     </div>
 @endsection
 
@@ -59,4 +99,6 @@
             });
         })
     </script>
+    
+    
 @endsection
