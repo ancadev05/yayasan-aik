@@ -32,3 +32,7 @@ Route::get('/daftar-program', [PagesContrller::class, 'daftarProgram']);
 Route::get('/daftar-program/{slug}', [PagesContrller::class, 'programShow']);
 
 // Route::get('/program-swho', [PagesContrller::class, 'programShow']);
+
+Route::get('/ck', function () {
+    return view('pages.ck');
+});

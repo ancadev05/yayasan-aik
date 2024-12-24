@@ -10,7 +10,11 @@
     {{-- bootstrap --}}
     <link rel="stylesheet" href="{{ asset('/vendor/bootstrap5/css/bootstrap.min.css') }}">
     {{-- ck editor --}}
-    <link rel="stylesheet" href="{{ asset('/vendor/ckeditor5/ckeditor5.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('/vendor/ckeditor5/ckeditor5.css') }}"> --}}
+
+    {{-- cdn ckeditor --}}
+    <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/44.1.0/ckeditor5.css" />
+    <script src="https://cdn.ckeditor.com/ckeditor5/44.1.0/ckeditor5.umd.js"></script>
 
     <style>
         .main-container {
@@ -34,7 +38,8 @@
     <script src="{{ asset('/vendor/bootstrap5/js/bootstrap.bundle.min.js') }}"></script>
 
     {{-- ckeditor --}}
-    <script src="{{ asset('/vendor/ckeditor5/ckeditor5.js') }}"></script>
+    {{-- <script src="{{ asset('/vendor/ckeditor5/ckeditor5.js') }}"></script> --}}
+    {{-- <script src="{{ asset('/vendor/ckeditor4/ckeditor.js') }}"></script> --}}
 
     {{-- script --}}
     @yield('script')
