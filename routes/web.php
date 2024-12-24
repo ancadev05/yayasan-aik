@@ -36,3 +36,9 @@ Route::get('/daftar-program/{slug}', [PagesContrller::class, 'programShow']);
 Route::get('/ck', function () {
     return view('pages.ck');
 });
+Route::get('/trix', function () {
+    return view('pages.trix');
+});
+Route::get('/jadi', function () {
+    return view('pages.jadi');
+});

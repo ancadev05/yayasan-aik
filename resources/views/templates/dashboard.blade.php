@@ -10,11 +10,7 @@
     {{-- bootstrap --}}
     <link rel="stylesheet" href="{{ asset('/vendor/bootstrap5/css/bootstrap.min.css') }}">
     {{-- ck editor --}}
-    {{-- <link rel="stylesheet" href="{{ asset('/vendor/ckeditor5/ckeditor5.css') }}"> --}}
-
-    {{-- cdn ckeditor --}}
-    <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/44.1.0/ckeditor5.css" />
-    <script src="https://cdn.ckeditor.com/ckeditor5/44.1.0/ckeditor5.umd.js"></script>
+    <link rel="stylesheet" href="{{ asset('vendor/ckeditor5/ckeditor5.css') }}">
 
     <style>
         .main-container {
