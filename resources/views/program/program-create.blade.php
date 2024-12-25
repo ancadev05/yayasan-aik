@@ -21,6 +21,9 @@
                 <label for="deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
                 <div class="col-sm-10">
                     <textarea type="text" class="form-control" id="deskripsi" name="deskripsi" rows="5" required>{{ old('deskripsi') }}</textarea>
+                    <script>
+                        CKEDITOR.replace( 'deskripsi' );
+                    </script>
                 </div>
             </div>
 
@@ -36,45 +39,4 @@
             <button type="submit" class="btn btn-sm btn-primary">Tambah</button>
         </form>
 
-        <div class="main-container">
-            <div id="editor">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                {{-- <p>Hello from CKEditor 5!</p> --}}
-            </div>
-        </div>
-
-        <script type="importmap">
-            {
-                "imports": {
-                    "ckeditor5": "{{ asset('vendor/ckeditor5/ckeditor5.js') }}",
-                    "ckeditor5/": "../../assets/vendor/"
-                }
-            }
-        </script>
-        <script type="module">
-            import {
-                ClassicEditor,
-                Essentials,
-                Paragraph,
-                Bold,
-                Italic,
-                Font
-            } from 'ckeditor5';
-
-            ClassicEditor
-                .create(document.querySelector('#editor'), {
-                    licenseKey: 'eyJhbGciOiJFUzI1NiJ9.eyJleHAiOjE3NjY2MjA3OTksImp0aSI6ImU0NGEyYThjLTc3NmUtNDQyZS04YzFiLTdkMGJjMzEzOThmMyIsImxpY2Vuc2VkSG9zdHMiOlsiMTI3LjAuMC4xIiwibG9jYWxob3N0IiwiMTkyLjE2OC4qLioiLCIxMC4qLiouKiIsIjE3Mi4qLiouKiIsIioudGVzdCIsIioubG9jYWxob3N0IiwiKi5sb2NhbCJdLCJ1c2FnZUVuZHBvaW50IjoiaHR0cHM6Ly9wcm94eS1ldmVudC5ja2VkaXRvci5jb20iLCJkaXN0cmlidXRpb25DaGFubmVsIjpbImNsb3VkIiwiZHJ1cGFsIl0sImxpY2Vuc2VUeXBlIjoiZGV2ZWxvcG1lbnQiLCJmZWF0dXJlcyI6WyJEUlVQIl0sInZjIjoiNWM5NGNiZWMifQ.-ZQ1GFwsQI0ag8ym_U-PMEpJ-yvJZxLc3Td5eaYAq58dMhsfnXeO2C7fPXo3B9vFzD57wW0My9CgZNRbgksL8w', // Or 'GPL'.
-                    plugins: [Essentials, Paragraph, Bold, Italic, Font],
-                    toolbar: [
-                        'undo', 'redo', '|', 'bold', 'italic', '|',
-                        'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor'
-                    ]
-                })
-                .then(editor => {
-                    window.editor = editor;
-                })
-                .catch(error => {
-                    console.error(error);
-                });
-        </script>
     @endsection

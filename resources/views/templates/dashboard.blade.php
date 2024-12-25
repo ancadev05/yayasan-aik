@@ -10,7 +10,7 @@
     {{-- bootstrap --}}
     <link rel="stylesheet" href="{{ asset('/vendor/bootstrap5/css/bootstrap.min.css') }}">
     {{-- ck editor --}}
-    <link rel="stylesheet" href="{{ asset('vendor/ckeditor5/ckeditor5.css') }}">
+    <script src="{{ asset('vendor/ckeditor/ckeditor.js') }}"></script>
 
     <style>
         .main-container {
