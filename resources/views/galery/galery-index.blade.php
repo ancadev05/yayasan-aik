@@ -30,8 +30,7 @@
                         <td>{{ $i++ }}</td>
                         <td>{{ $item->title }}</td>
                         <td>
-                            {{ $item->photo->photo }}
-                            {{-- <img src="{{ asset('public/galery/' . $item->photo->photo[0]) }}" width="150px" alt="..."> --}}
+                            <img src="{{ asset('public/gambar-galery/' . $item->photo[0]->photo) }}" width="150px" alt="...">
                         </td>
                         <td>
                             <a href="{{ url('/galery/' . $item->id . '/edit') }}" class="btn btn-sm btn-warning shadow-sm">Edit</a>

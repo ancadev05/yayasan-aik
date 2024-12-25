@@ -50,9 +50,6 @@ class GaleryController extends Controller
                     'photo' => $filename
                 ]);
             }
-            // $file = $request->file('gambar-galery'); // mengambil file dari form
-            // $file_name = date('ymdhis') . '.' . $file->getClientOriginalExtension(); // meriname file, antisipasi nama file double. memberi nama file dengan gabung extensi
-            // $file->storeAs('public/gambar-galery/', $file_name); // memindahkan file ke folder public agar bisa diakses
         }
 
         return redirect('/galery');
@@ -71,7 +68,11 @@ class GaleryController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $galery = Galery::find($id);
+        $photos = Photo::where('galery_id', $id)->get();
+
+        // dd($photos);
+        return view('galery.galery-edit', compact('galery', 'photos'));
     }
 
     /**
@@ -79,7 +80,30 @@ class GaleryController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        dd('masuk');
+        $request->validate([
+            'title' => 'required',
+            'gambar_galery.*' => 'file|image|mimes:jpg,jpeg,png,JPG,JPEG,PNG|max:2048' // validasi setiap foto
+        ]);
+
+        $galery = Galery::where('id', $id)->update([
+            'title' => $request->title,
+            'deskripsi' => $request->deskripsi,
+        ]);
+
+        // Proses unggah foto
+        if ($request->hasFile('gambar-galery')) {
+            foreach ($request->file('gambar-galery') as $file) {
+                $filename = uniqid() . '_' . time() . '.' . $file->getClientOriginalExtension();
+                $file->storeAs('public/gambar-galery/', $filename);
+                Photo::create([
+                    'galery_id' => $galery->id,
+                    'photo' => $filename
+                ]);
+            }
+        }
+
+        return redirect('/galery');
     }
 
     /**
