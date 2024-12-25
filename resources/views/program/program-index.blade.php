@@ -33,7 +33,7 @@
                             <img src="{{ asset('public/gambar-program/' . $item->gambar_program) }}" width="150px" alt="...">
                         </td>
                         <td>{{ $item->title }}</td>
-                        <td>{{ $item->deskripsi }}</td>
+                        <td>{!! Str::limit($item->deskripsi, 90, '...') !!}</td>
                         <td>
                             <a href="{{ url('/program/' . $item->id . '/edit') }}" class="btn btn-sm btn-warning shadow-sm">Edit</a>
                             <form action="{{ url('/program/' . $item->id) }}" method="post" class="d-inline">

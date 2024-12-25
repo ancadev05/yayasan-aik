@@ -22,6 +22,9 @@
                 <label for="deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
                 <div class="col-sm-10">
                     <textarea type="text" class="form-control" id="deskripsi" name="deskripsi" rows="5" required>{{ old('deskripsi', $program->deskripsi) }}</textarea>
+                    <script>
+                        CKEDITOR.replace( 'deskripsi' );
+                    </script>
                 </div>
             </div>
 

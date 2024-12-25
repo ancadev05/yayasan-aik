@@ -11,7 +11,9 @@
                 <img src="{{ asset('public/gambar-program/' . $program->gambar_program) }}" class="img-fluid" alt="...">
                 <div class="card-body">
                     <h3 class="fw-bold mt-3">{{ $program->title }}</h3>
-                    <p>{{ $program->deskripsi }}</p>
+                    <div>
+                        {!! $program->deskripsi !!}
+                    </div>
                 </div>
             </div>
 
