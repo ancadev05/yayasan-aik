@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PagesContrller;
 use App\Http\Controllers\ProgramController;
@@ -24,10 +25,12 @@ Route::get('/kariango', function () {
 
 
 Route::resource('/program', ProgramController::class);
+Route::resource('/galery', GaleryController::class);
+
 
 Route::get('/about', [PagesContrller::class, 'about']);
 Route::get('/donatur', [PagesContrller::class, 'donatur']);
-Route::get('/galery', [PagesContrller::class, 'galery']);
+// Route::get('/galery', [PagesContrller::class, 'galery']);
 Route::get('/daftar-program', [PagesContrller::class, 'daftarProgram']);
 Route::get('/daftar-program/{slug}', [PagesContrller::class, 'programShow']);
 

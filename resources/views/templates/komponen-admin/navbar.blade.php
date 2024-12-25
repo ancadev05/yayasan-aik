@@ -13,6 +13,9 @@
                     <li class="nav-item">
                         <a class="nav-link {{ Request::is('program') ? 'active' : '' }}" href="{{ url('/program') }}">Program</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ Request::is('galery') ? 'active' : '' }}" href="{{ url('/galery') }}">Galery</a>
+                    </li>
                 </ul>
             </div>
     </div>
