@@ -31,6 +31,15 @@
     <!-- Main CSS File -->
     <link href="{{ asset('/bootslander/assets/css/main.css') }}" rel="stylesheet">
 
+    <style>
+        ul {
+            list-style-type: square; /* Mengubah bullet menjadi kotak */
+        }
+        ol {
+            list-style-type: upper-alpha; /* Mengubah angka menjadi huruf kapital */
+        }
+    </style>
+
     <!-- =======================================================
   * Template Name: Bootslander
   * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/

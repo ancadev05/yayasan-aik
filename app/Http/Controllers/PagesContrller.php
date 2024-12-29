@@ -10,8 +10,8 @@ class PagesContrller extends Controller
     public function about(){
         return view('pages.about');
     }
-    public function donatur(){
-        return view('pages.donatur');
+    public function donasi(){
+        return view('pages.donasi');
     }
     public function galery(){
         return view('pages.galery');
