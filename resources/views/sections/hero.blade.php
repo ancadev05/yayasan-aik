@@ -8,7 +8,7 @@
             </div>
 
             <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
-                <h1>Yayasan Amal Islam Kariango</h1>
+                <h1>Yayasan Amal Islam Kariango Maros</h1>
                 <p>Raih pahala jariyah dengan membantu sesama!</p>
             </div>
 
