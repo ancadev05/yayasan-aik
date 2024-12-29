@@ -27,4 +27,8 @@ class PagesContrller extends Controller
         $program = Program::where('slug', $slug)->first();
         return view('pages.program-show', compact('program'));
     }
+
+    public function contact(){
+        return view('pages.contact');
+    }
 }

@@ -35,6 +35,7 @@ Route::get('/donasi', [PagesContrller::class, 'donasi']);
 // Route::get('/galery', [PagesContrller::class, 'galery']);
 Route::get('/daftar-program', [PagesContrller::class, 'daftarProgram']);
 Route::get('/daftar-program/{slug}', [PagesContrller::class, 'programShow']);
+Route::get('/contact', [PagesContrller::class, 'contact']);
 
 // Route::get('/program-swho', [PagesContrller::class, 'programShow']);
 

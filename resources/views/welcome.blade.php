@@ -62,6 +62,10 @@
         {{-- program --}}
         @include('sections.program')
         {{-- /program --}}
+        
+        {{-- media sosial --}}
+        @include('sections.social-media')
+        {{-- /media sosial --}}
 
         <!-- Gallery Section -->
         {{-- @include('sections.galery') --}}

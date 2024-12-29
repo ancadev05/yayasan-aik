@@ -13,11 +13,10 @@
           <li><a href="{{ url('/') }}" class="{{ Request::is('/') ? 'active' : '' }}">Home</a></li>
           <li><a href="{{ url('/donasi') }}" class="{{ Request::is('donatur') ? 'active' : '' }}">Donasi</a></li>
           <li><a href="{{ url('/daftar-program') }}" class="{{ Request::is('daftar-program') ? 'active' : '' }}">Program</a></li>
-          <li><a href="{{ url('/galery') }}" class="{{ Request::is('galery') ? 'active' : '' }}">Galery</a></li>
-          <li><a href="{{ url('/about') }}" class="{{ Request::is('about') ? 'active' : '' }}">Tentang Kami</a></li>
+          {{-- <li><a href="{{ url('/galery') }}" class="{{ Request::is('galery') ? 'active' : '' }}">Galery</a></li> --}}
           {{-- <li><a href="#team">Team</a></li> --}}
           <li><a href="{{ url('/pengembangan') }}">Data Anak Yatim</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Update Kegiatan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Galeri Distribusi Fidyah</a></li>
               <li><a href="#">Galeri Distribusi Wakaf Qur'an</a></li>
@@ -36,7 +35,8 @@
               <li><a href="#">Dropdown 4</a></li> --}}
             </ul>
           </li>
-          <li><a href="#kontak">Kontak</a></li>
+          <li><a href="{{ url('/about') }}" class="{{ Request::is('about') ? 'active' : '' }}">Tentang Kami</a></li>
+          <li><a href="{{ url('/contact') }}" class="{{ Request::is('contact') ? 'active' : '' }}">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
