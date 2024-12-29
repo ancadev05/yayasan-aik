@@ -47,3 +47,6 @@ Route::get('/trix', function () {
 Route::get('/jadi', function () {
     return view('pages.jadi');
 });
+Route::get('/pengembangan', function () {
+    return view('pages.pengembangan');
+});

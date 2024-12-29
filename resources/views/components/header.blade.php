@@ -16,7 +16,7 @@
           <li><a href="{{ url('/galery') }}" class="{{ Request::is('galery') ? 'active' : '' }}">Galery</a></li>
           <li><a href="{{ url('/about') }}" class="{{ Request::is('about') ? 'active' : '' }}">Tentang Kami</a></li>
           {{-- <li><a href="#team">Team</a></li> --}}
-          <li><a href="#team">Data Anak Yatim</a></li>
+          <li><a href="{{ url('/pengembangan') }}">Data Anak Yatim</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Galeri Distribusi Fidyah</a></li>
