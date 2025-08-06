@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PagesContrller;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\ProgramController;
+use App\Http\Controllers\ProgramDetail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -51,3 +52,7 @@ Route::get('/jadi', function () {
 Route::get('/pengembangan', function () {
     return view('pages.pengembangan');
 });
+
+// detail program
+// Route::get('ambulance-gratis', [ProgramDetail::class, 'ambulanceGratis'])->name('ambulance.gratis');
+Route::get('ambulance-gratis', [ProgramDetail::class, 'ambulanceGratis'])->name('ambulance.gratis');

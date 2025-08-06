@@ -60,9 +60,13 @@
         <!-- End Stats Item -->
 
         {{-- program --}}
+        @include('sections.unit')
+        {{-- /program --}}
+
+        {{-- program --}}
         @include('sections.program')
         {{-- /program --}}
-        
+
         {{-- media sosial --}}
         @include('sections.social-media')
         {{-- /media sosial --}}
