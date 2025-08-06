@@ -3,6 +3,7 @@
 use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PagesContrller;
+use App\Http\Controllers\PagesDonasiController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\ProgramDetail;
@@ -56,3 +57,6 @@ Route::get('/pengembangan', function () {
 // detail program
 // Route::get('ambulance-gratis', [ProgramDetail::class, 'ambulanceGratis'])->name('ambulance.gratis');
 Route::get('ambulance-gratis', [ProgramDetail::class, 'ambulanceGratis'])->name('ambulance.gratis');
+
+// halaman donasi
+Route::get('masjid', [PagesDonasiController::class, 'masjid'])->name('masjid');

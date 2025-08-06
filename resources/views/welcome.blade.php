@@ -68,8 +68,13 @@
         {{-- /program --}}
 
         {{-- media sosial --}}
-        @include('sections.social-media')
+        {{-- menampilkan video youtube --}}
+        {{-- @include('sections.social-media') --}}
         {{-- /media sosial --}}
+
+        {{-- program donasi --}}
+        @include('sections.donasi')
+        {{-- /program donasi --}}
 
         <!-- Gallery Section -->
         {{-- @include('sections.galery') --}}
