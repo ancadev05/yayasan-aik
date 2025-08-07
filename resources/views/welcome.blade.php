@@ -62,6 +62,10 @@
         {{-- program --}}
         @include('sections.unit')
         {{-- /program --}}
+        
+        {{-- program donasi --}}
+        @include('sections.donasi')
+        {{-- /program donasi --}}
 
         {{-- program --}}
         @include('sections.program')
@@ -72,9 +76,6 @@
         {{-- @include('sections.social-media') --}}
         {{-- /media sosial --}}
 
-        {{-- program donasi --}}
-        @include('sections.donasi')
-        {{-- /program donasi --}}
 
         <!-- Gallery Section -->
         {{-- @include('sections.galery') --}}
@@ -91,6 +92,14 @@
         {{-- kontak --}}
         @include('sections.kontak')
         {{-- /kontak --}}
+
+        <section class="w-00 w-100">
+            <a href="{{ url('donasi') }}">
+                <div class="conainer position-fixed bottom-0 bg-success w-100">
+                    <h3 class="text-bg-success d-block text-center w-100 pt-2">IKUT BERDONASI</h3>
+                </div>
+            </a>
+        </section>
 
     </main>
 
