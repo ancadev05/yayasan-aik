@@ -8,6 +8,7 @@ class PagesDonasiController extends Controller
 {
     public function gedungSantri()
     {
-        return view('pages.donasi.gedung-santri');
+        $url = config('app.url') . '/gedung-santri';
+        return view('pages.donasi.gedung-santri', compact('url'));
     }
 }

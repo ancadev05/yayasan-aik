@@ -1,7 +1,17 @@
 @extends('templates.landing-page')
 
-@section('title')
-    Gedung Santri
+@section('meta')
+    <title>AIK | Gedung Santri</title>
+
+    {{-- audiends google --}}
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    {{-- audiends sosial media --}}
+    <meta property="og:title" content="Renovasi Gedung">
+    <meta property="og:description" content="Ruangan Santri dan Masjid Butuh Perbaikan">
+    <meta property="og:image" content="{{ asset('assets/img/foto-donasi/a-4.jpeg') }}">
+    <meta property="og:url" content="{{ $url }}">
 @endsection
 
 @section('content')
@@ -195,14 +205,14 @@
         // Fungsi untuk membagikan ke WhatsApp
         function shareToWhatsApp() {
             const text = 'Yuk beramal!';
-            const url = 'https://contoh-website.com/postingan-keren';
+            const url = '{{ $url }}';
             const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`;
             window.open(whatsappUrl, '_blank');
         }
 
         // Fungsi untuk membagikan ke Facebook
         function shareToFacebook() {
-            const url = 'https://contoh-website.com/postingan-keren';
+            const url = '{{ $url }}';
             const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
             window.open(facebookUrl, '_blank', 'width=600,height=400');
         }

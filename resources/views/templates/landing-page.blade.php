@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>AIK | @yield('title')</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    
+    @yield('meta')
+
+    <meta property="og:type" content="website">
 
     <!-- Favicons -->
     {{-- <link href="{{ asset('/bootslander/assets/img/favicon.png') }}" rel="icon"> --}}
@@ -33,10 +34,13 @@
 
     <style>
         ul {
-            list-style-type: square; /* Mengubah bullet menjadi kotak */
+            list-style-type: square;
+            /* Mengubah bullet menjadi kotak */
         }
+
         ol {
-            list-style-type: upper-alpha; /* Mengubah angka menjadi huruf kapital */
+            list-style-type: upper-alpha;
+            /* Mengubah angka menjadi huruf kapital */
         }
     </style>
 
