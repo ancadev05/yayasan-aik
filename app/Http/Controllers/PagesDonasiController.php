@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class PagesDonasiController extends Controller
 {
-    public function masjid()
+    public function gedungSantri()
     {
-        return view('pages.donasi.masjid');
+        return view('pages.donasi.gedung-santri');
     }
 }

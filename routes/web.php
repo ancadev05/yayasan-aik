@@ -59,4 +59,4 @@ Route::get('/pengembangan', function () {
 Route::get('ambulance-gratis', [ProgramDetail::class, 'ambulanceGratis'])->name('ambulance.gratis');
 
 // halaman donasi
-Route::get('masjid', [PagesDonasiController::class, 'masjid'])->name('masjid');
+Route::get('gedung-santri', [PagesDonasiController::class, 'gedungSantri'])->name('gedung.santri');

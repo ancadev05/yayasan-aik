@@ -59,13 +59,14 @@
         {{-- @include('sections.stats') --}}
         <!-- End Stats Item -->
 
-        {{-- program --}}
-        @include('sections.unit')
-        {{-- /program --}}
-        
         {{-- program donasi --}}
         @include('sections.donasi')
         {{-- /program donasi --}}
+
+        {{-- program --}}
+        @include('sections.unit')
+        {{-- /program --}}
+
 
         {{-- program --}}
         @include('sections.program')
@@ -114,6 +115,9 @@
     <!-- Preloader -->
     <div id="preloader"></div>
 
+    {{-- jquery --}}
+    <script src="{{ asset('/vendor/jquery/jquery-3.7.1.min.js') }}"></script>
+
     <!-- Vendor JS Files -->
     <script src="{{ asset('bootslander/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('bootslander/assets/vendor/php-email-form/validate.js') }}"></script>
@@ -124,6 +128,26 @@
 
     <!-- Main JS File -->
     <script src="{{ asset('bootslander/assets/js/main.js') }}"></script>
+
+    {{-- script --}}
+    @yield('script')
+
+    <script>
+        // Fungsi untuk membagikan ke WhatsApp
+        function shareToWhatsApp() {
+            const text = 'Yuk beramal!';
+            const url = 'https://contoh-website.com/postingan-keren';
+            const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Fungsi untuk membagikan ke Facebook
+        function shareToFacebook() {
+            const url = 'https://contoh-website.com/postingan-keren';
+            const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+            window.open(facebookUrl, '_blank', 'width=600,height=400');
+        }
+    </script>
 
 </body>
 
