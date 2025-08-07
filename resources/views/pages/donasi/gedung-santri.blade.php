@@ -4,8 +4,10 @@
     <title>AIK | Gedung Santri</title>
 
     {{-- audiends google --}}
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="title" content="Renovasi Gedung">
+    <meta name="description" content="Ruangan Santri dan Masjid Butuh Perbaikan">
+    <meta name="image" content="{{ asset('assets/img/foto-donasi/a-4.jpeg') }}">
+    <meta name="url" content="{{ $url }}">
 
     {{-- audiends sosial media --}}
     <meta property="og:title" content="Renovasi Gedung">
@@ -17,7 +19,7 @@
 @section('content')
     <section>
         <div class="container">
-            <div class="bg-warning py-3">
+            <div class="bg-warning p-3">
                 <span class="d-block text-center">Tak semua bisa berdonasi, tapi semua bisa berbagi. Yuk, bantu share halaman ini!</span>
                 <div class="d-flex justify-content-center mt-3">
                     <div class="btn-group">
