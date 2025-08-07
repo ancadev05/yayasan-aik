@@ -4,10 +4,8 @@
     <title>AIK | Gedung Santri</title>
 
     {{-- audiends google --}}
-    <meta name="title" content="Renovasi Gedung">
     <meta name="description" content="Ruangan Santri dan Masjid Butuh Perbaikan">
-    <meta name="image" content="{{ asset('assets/img/foto-donasi/a-4.jpeg') }}">
-    <meta name="url" content="{{ $url }}">
+    <link rel="canonical" href="{{ $url }}">
 
     {{-- audiends sosial media --}}
     <meta property="og:title" content="Renovasi Gedung">
