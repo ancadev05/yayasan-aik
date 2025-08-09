@@ -6,6 +6,13 @@
 
 @section('content')
     <section>
+        <div class="container">
+            <h5 class="text-center">Atau daftar menjadi donatur tetep</h5>
+            <a href="#" class="btn btn-primary">DAFTAR</a>
+        </div>
+    </section>
+
+    <section>
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="alert alert-warning text-center mb-3">Hati-hati dari pihak yang tidak bertanggung jawab, Nomor
                 rekenig resmi hanya menggunakan rekening a.n <b>Yayasan Amal Islam Kariango</b></div>
