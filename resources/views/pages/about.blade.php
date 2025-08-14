@@ -24,6 +24,14 @@
                 <li>Lorem ipsum dolor sit amet.</li>
                 <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque quos nemo, voluptatibus tempore tempora unde!</li>
             </ul> --}}
+
+            <h6 class="">Dokumen Legalitas</h6>
+            <div class="row">
+                <div class="col-md-6 col-sm-10">
+                    <img src="{{ asset('assets/img/akte-yayasan.jpg') }}" alt="" width="100%">
+
+                </div>
+            </div>
         </div>
     </section>
 @endsection

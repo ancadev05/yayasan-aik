@@ -76,8 +76,8 @@
     <!-- Scroll Top -->
     {{-- <a href="https://wa.me/6285299001213" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-whatsapp"></i></a> --}}
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    {{-- <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a> --}}
 
     <!-- Preloader -->
     {{-- <div id="preloader"></div> --}}

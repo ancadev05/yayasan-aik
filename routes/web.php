@@ -60,3 +60,5 @@ Route::get('ambulance-gratis', [ProgramDetail::class, 'ambulanceGratis'])->name(
 
 // halaman donasi
 Route::get('gedung-santri', [PagesDonasiController::class, 'gedungSantri'])->name('gedung.santri');
+Route::get('pembebasan-lahan', [PagesDonasiController::class, 'pembebasanLahan'])->name('pembebasan.lahan');
+Route::get('wakaf-quran', [PagesDonasiController::class, 'wakafQuran'])->name('wakaf.quran');
