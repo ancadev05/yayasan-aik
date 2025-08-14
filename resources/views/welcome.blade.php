@@ -109,8 +109,8 @@
     {{-- /footer --}}
 
     <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    {{-- <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a> --}}
 
     <!-- Preloader -->
     <div id="preloader"></div>
@@ -133,20 +133,7 @@
     @yield('script')
 
     <script>
-        // Fungsi untuk membagikan ke WhatsApp
-        function shareToWhatsApp() {
-            const text = 'Yuk beramal!';
-            const url = 'https://contoh-website.com/postingan-keren';
-            const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`;
-            window.open(whatsappUrl, '_blank');
-        }
-
-        // Fungsi untuk membagikan ke Facebook
-        function shareToFacebook() {
-            const url = 'https://contoh-website.com/postingan-keren';
-            const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
-            window.open(facebookUrl, '_blank', 'width=600,height=400');
-        }
+        AOS.init();
     </script>
 
 </body>

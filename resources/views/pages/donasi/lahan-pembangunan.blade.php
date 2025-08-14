@@ -11,7 +11,7 @@
     {{-- audiends sosial media --}}
     <meta property="og:title" content="Donasi Pembangunan Pondok Pesantren | Sedekah Jariyah">
     <meta property="og:description"
-        content="Mari bersama membangun pondok pesantren untuk generasi Qur’ani. Donasi Anda menjadi sedekah jariyah yang pahalanya terus mengalir.">
+        content="Mari bersama membangun pondok pesantren untuk generasi Qurani. Donasi Anda menjadi sedekah jariyah yang pahalanya terus mengalir.">
     <meta property="og:image" content="{{ asset('assets/img/foto-donasi/lahan-pembangunan/penimbunan-lahan.png') }}">
     <meta property="og:url" content="{{ $url }}">
 
@@ -22,12 +22,12 @@
   "@type": "DonateAction",
   "name": "Donasi Pembangunan Pondok Pesantren",
   "description": "Bantu wujudkan pondok pesantren untuk generasi Qur’ani. Donasi Anda menjadi sedekah jariyah yang pahalanya mengalir hingga akhir zaman.",
-  "url": "https://domain-anda.com/donasi-pesantren",
-  "image": "https://domain-anda.com/images/pondok-preview.jpg",
+  "url": "{{ $url }}",
+  "image": "{{ asset('assets/img/foto-donasi/lahan-pembangunan/penimbunan-lahan.png') }}",
   "recipient": {
     "@type": "Organization",
     "name": "Yayasan Pesantren X",
-    "url": "https://domain-anda.com"
+    "url": "{{ $url }}"
   }
 }
 </script>
@@ -35,7 +35,7 @@
 
 @section('content')
     <section>
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="bg-warning p-3">
                 <span class="d-block text-center">Tak semua bisa berdonasi, tapi semua bisa berbagi. Yuk, bantu share
                     halaman ini!</span>
@@ -51,31 +51,29 @@
         </div>
     </section>
 
-    <section class="bg light-background">
-        <div class="container">
+    <section class="">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
             <h4 class="text-center">Mari Bersama Wujudkan Pondok Pesantren untuk Generasi Qur’ani Masa Depan</h4>
             <p class="text-center">Setiap rupiah yang Anda berikan adalah investasi pahala yang tak pernah putus.</p>
         </div>
     </section>
 
     <section>
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
             <h5>Kondisi Lahan:</h5>
             <div class="row">
                 <div class="col-sm-12 col-md-4">
                     <iframe src="{{ asset('assets/img/foto-donasi/lahan-pembangunan/3.mp4?autoplay=1&mute=1') }}"
-                        width="100%" height="450" frameborder="0" allow="autoplay; encrypted-media"
+                        width="100%" height="500" frameborder="0" allow="autoplay; encrypted-media"
                         allowfullscreen></iframe>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <iframe src="{{ asset('assets/img/foto-donasi/lahan-pembangunan/1.mp4') }}"
-                        width="100%" height="450" frameborder="0" allow="autoplay; encrypted-media"
-                        allowfullscreen></iframe>
+                    <iframe src="{{ asset('assets/img/foto-donasi/lahan-pembangunan/1.mp4') }}" width="100%"
+                        height="500" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <iframe src="{{ asset('assets/img/foto-donasi/lahan-pembangunan/2.mp4') }}"
-                        width="100%" height="450" frameborder="0" allow="autoplay; encrypted-media"
-                        allowfullscreen></iframe>
+                    <iframe src="{{ asset('assets/img/foto-donasi/lahan-pembangunan/2.mp4') }}" width="100%"
+                        height="500" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -134,8 +132,8 @@
 
     </section>
 
-    <section class=" light-background">
-        <div class="container">
+    <section class=" ">
+        <div class="container light-background" data-aos="fade-up" data-aos-delay="100">
             <p>Kami bermimpi menghadirkan pondok pesantren yang layak, nyaman, dan penuh keberkahan — tempat para santri
                 menghafal Al-Qur’an, menuntut ilmu agama, dan kelak menjadi cahaya penerang di tengah masyarakat.</p>
             <p>Tetapi, mimpi ini membutuhkan dukungan besar dari hati-hati yang dermawan seperti Anda.</p>
@@ -143,7 +141,7 @@
     </section>
 
     <section>
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
             <h5 class="text-center">Total dana yang dibutuhkan untuk penimbunan lahan</h5>
             <span class="d-block text-center" style="font-size: 30px;font-weight: bold">Rp 480.000.000,-</span>
 
@@ -161,8 +159,8 @@
     </section>
 
 
-    <section class="light-background">
-        <div class="container mb-4" data-aos="fade-up" data-aos-delay="100">
+    <section>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="alert alert-warning text-center mb-3">Hati-hati dari pihak yang tidak bertanggung jawab, Nomor
                 rekenig resmi hanya menggunakan rekening a.n <b>Yayasan Amal Islam Kariango</b></div>
             <h3 class="fw-bold text-center mb-3">Salurkan Donasi Terbaik Anda</h3>
@@ -176,8 +174,8 @@
             </div>
         </div>
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <p class="text-center">Silahkan bagi donatur yang ingin berdonasi menggunakan QR Code bisa scan
+         <div class="container" data-aos="fade-up" data-aos-delay="100">
+             <p class="text-center">Silahkan bagi donatur yang ingin berdonasi menggunakan QR Code bisa scan
                 dibawah
                 ini: </p>
             <div class="d-flex flex-column align-items-center mt-3">
@@ -202,8 +200,8 @@
                     </ul>
                 </div>
             </div>
-        </div>
 
+         </div>
     </section>
 
     <section>
@@ -216,16 +214,16 @@
                     Konfirmasi Donasi</a>
             </div>
         </div>
-        <div class="container mt-5" data-aos="fade-up" data-aos-delay="300">
+        <div class="container mt-3">
             <h6 class="text-center">Terimakasih atas donasi terbaik anda yang telah dititipkan di Yayasan Amal Islam
                 Kariango, Insyaallah akan berdampak manfaat besar untuk orang banyak</h6>
         </div>
     </section>
 
     <section>
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row">
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-6 g-3">
                     <h6 class="text-center">Lokasi pembangunan</h6>
                     <div class="row">
                         <div class="d-flex align-items-center justify-content-center">
@@ -238,9 +236,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-6 g-3">
                     <h6 class="text-center">Dokumen Legalitas</h6>
-                    <img src="{{ asset('assets/img/akte-yayasan.jpg') }}" alt="" width="100%">
+                    <img src="{{ asset('assets/img/dokumen-legalitas.png') }}" alt="" width="100%">
                 </div>
             </div>
 
@@ -250,7 +248,8 @@
     <section class="w-00 w-100">
         <a href="https://wa.me/6285299001213">
             <div class="conainer position-fixed bottom-0 bg-success w-100">
-                <h3 class="text-bg-success d-block text-center w-100 pt-2"><i class="bi bi-whatsapp"></i> SAYA INGIN SEDEKAH</h3>
+                <h3 class="text-bg-success d-block text-center w-100 pt-2"><i class="bi bi-whatsapp"></i> SAYA INGIN
+                    SEDEKAH</h3>
             </div>
         </a>
     </section>

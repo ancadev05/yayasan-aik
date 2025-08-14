@@ -275,7 +275,7 @@
                     // Callback jika permintaan berhasil
                     success: function(response) {
                         // Tampilkan pesan sukses dari server
-                        $("#statusMessage").removeClass('error').addClass('success').text(
+                        $("#statusMessage").removeClass('error').addClass('alert alert-success').text(
                             response.message);
 
                         // Kosongkan form setelah berhasil
@@ -294,7 +294,7 @@
                         }
 
                         // Tampilkan pesan error
-                        $("#statusMessage").removeClass('success').addClass('error').text(
+                        $("#statusMessage").removeClass('success').addClass('alert alert-danger').text(
                             errorMessage);
                     }
                 });

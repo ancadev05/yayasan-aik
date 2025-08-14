@@ -99,6 +99,10 @@
     {{-- script --}}
     @yield('script')
 
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

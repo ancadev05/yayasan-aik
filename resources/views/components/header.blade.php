@@ -12,8 +12,8 @@
             <ul>
                 <li><a href="{{ url('/') }}" class="{{ Request::is('/') ? 'active' : '' }}">Home</a></li>
                 <li><a href="{{ url('/donasi') }}" class="{{ Request::is('donatur') ? 'active' : '' }}">Donasi</a></li>
-                <li><a href="{{ url('/daftar-program') }}"
-                        class="{{ Request::is('daftar-program') ? 'active' : '' }}">Program</a></li>
+                {{-- <li><a href="{{ url('/daftar-program') }}"
+                        class="{{ Request::is('daftar-program') ? 'active' : '' }}">Program</a></li> --}}
                 {{-- <li><a href="{{ url('/galery') }}" class="{{ Request::is('galery') ? 'active' : '' }}">Galery</a></li> --}}
                 {{-- <li><a href="#team">Team</a></li> --}}
                 <li><a href="{{ url('/pengembangan') }}">Data Anak Yatim</a></li>
