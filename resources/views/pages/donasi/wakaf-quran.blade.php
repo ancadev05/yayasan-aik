@@ -8,7 +8,7 @@
     <link rel="canonical" href="{{ $url }}">
 
     {{-- audiends sosial media --}}
-    <meta property="og:title" content="Renovasi Gedung">
+    <meta property="og:title" content="Wakaf Mushaf Quran">
     <meta property="og:description" content="Ruangan Santri dan Masjid Butuh Perbaikan">
     <meta property="og:image" content="{{ asset('assets/img/foto-donasi/wakaf-quran/wakaf-quran.png') }}">
     <meta property="og:url" content="{{ $url }}">
@@ -16,16 +16,90 @@
 
 @section('content')
     <section>
-        <div class="container">
-            <div class="bg-warning p-3">
-                <span class="d-block text-center">Tak semua bisa berdonasi, tapi semua bisa berbagi. Yuk, bantu share
-                    halaman ini!</span>
-                <div class="d-flex justify-content-center mt-3">
-                    <div class="btn-group">
-                        <button class="btn btn-success" onclick="shareToWhatsApp()"><i class="bi bi-whatsapp"></i>
-                            WhatsApp</button>
-                        <button class="btn btn-primary" onclick="shareToFacebook()"><i class="bi bi-facebook"></i>
-                            Facebook</button>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="text-center">WAKAF MUSHAF QUR'AN</h4>
+            <p class="text-center">Raih pahala dari setiap ayat Qur'an yang dibaca</p>
+            <h5 class="text-center">Dengan sedekah mulai Rp50.000,- Anda sudah membantu memberikan mushaf qur'an untuk para
+                santri yang membutuhkan.</h5>
+        </div>
+    </section>
+
+    <section>
+        {{-- {{ env('API_URL') }} --}}
+        @php
+            // dd(env('API_URL'));
+        @endphp
+    </section>
+
+    <section>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row mb-3">
+                <div class="col-sm-6 col-md-4">
+                    <iframe src="{{ asset('assets/img/foto-donasi/wakaf-quran/1.mp4?autoplay=1&mute=1') }}" width="100%"
+                        height="600" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <iframe src="{{ asset('assets/img/foto-donasi/wakaf-quran/2.mp4?autoplay=1&mute=1') }}" width="100%"
+                        height="600" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <iframe src="{{ asset('assets/img/foto-donasi/wakaf-quran/3.mp4?autoplay=1&mute=1') }}" width="100%"
+                        height="600" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <h6>Dokumentasi distribusi mushaf Qur'an:</h6>
+            <div class="row row-cols-2 row-cols-md-4 g-2">
+                <div class="col">
+                    <img src="{{ asset('assets/img/foto-donasi/wakaf-quran/7.jpeg') }}" class="img-fluid gallery-img"
+                        alt="Deskripsi Gambar 1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        onclick="showImage(this)">
+                </div>
+                <div class="col">
+                    <img src="{{ asset('assets/img/foto-donasi/wakaf-quran/2.jpeg') }}" class="img-fluid gallery-img"
+                        alt="Deskripsi Gambar 1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        onclick="showImage(this)">
+                </div>
+                <div class="col">
+                    <img src="{{ asset('assets/img/foto-donasi/wakaf-quran/3.jpeg') }}" class="img-fluid gallery-img"
+                        alt="Deskripsi Gambar 1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        onclick="showImage(this)">
+                </div>
+                <div class="col">
+                    <img src="{{ asset('assets/img/foto-donasi/wakaf-quran/4.jpeg') }}" class="img-fluid gallery-img"
+                        alt="Deskripsi Gambar 1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        onclick="showImage(this)">
+                </div>
+                <div class="col">
+                    <img src="{{ asset('assets/img/foto-donasi/wakaf-quran/8.jpeg') }}" class="img-fluid gallery-img"
+                        alt="Deskripsi Gambar 1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        onclick="showImage(this)">
+                </div>
+                <div class="col">
+                    <img src="{{ asset('assets/img/foto-donasi/wakaf-quran/6.jpeg') }}" class="img-fluid gallery-img"
+                        alt="Deskripsi Gambar 1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        onclick="showImage(this)">
+                </div>
+                <div class="col">
+                    <img src="{{ asset('assets/img/foto-donasi/wakaf-quran/5.jpeg') }}" class="img-fluid gallery-img"
+                        alt="Deskripsi Gambar 1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        onclick="showImage(this)">
+                </div>
+                <div class="col">
+                    <img src="{{ asset('assets/img/foto-donasi/wakaf-quran/1.jpeg') }}" class="img-fluid gallery-img"
+                        alt="Deskripsi Gambar 1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        onclick="showImage(this)">
+                </div>
+            </div>
+
+            {{-- modal gambar --}}
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                    <div class="modal-content bg-transparent border-0">
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                            <img src="" id="fullscreen-img" class="img-fluid" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -33,27 +107,30 @@
     </section>
 
     {{-- form biodata pewakaf --}}
-    <section>
+    <section class="light-background">
         <div class="container">
-
+            <h5 class="text-center mb-3">Silahkan lengkapi data berikut untuk ikut berdonasi:</h5>
             <form action="" method="post" id="donatur-form">
                 @csrf
                 <input type="hidden" name="program_donasi_id" value="1">
                 <div class="mb-3">
-                    <label for="name" class="form-label fw-bold">Nama Lengkap</label>
-                    <input type="text" class="form-control" name="name">
+                    <label for="name" class="form-label fw-bold">Nama Lengkap<span
+                            class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="name" required>
                 </div>
                 <div class="mb-3">
-                    <label for="no_wa" class="form-label fw-bold">No. WhatsApp</label>
-                    <input type="number" class="form-control" name="no_wa">
+                    <label for="no_wa" class="form-label fw-bold">No. WhatsApp<span
+                            class="text-danger">*</span></label>
+                    <input type="number" class="form-control" name="no_wa" required>
                 </div>
                 <div class="mb-3">
-                    <label for="alamat" class="form-label fw-bold">Alamat</label>
-                    <textarea name="alamat" id="" cols="30" rows="3" class="form-control"></textarea>
+                    <label for="alamat" class="form-label fw-bold">Alamat<span class="text-danger">*</span></label>
+                    <textarea name="alamat" id="" cols="30" rows="3" class="form-control" required></textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="barang" class="form-label fw-bold">Pilih Jumlah Wakaf Mushaf Quran</label>
-                    <select name="barang" id="" class="form-select">
+                    <label for="barang" class="form-label fw-bold">Pilih Jumlah Wakaf Mushaf Quran<span
+                            class="text-danger">*</span></label>
+                    <select name="barang" id="" class="form-select" required>
                         <option value="">Jumlah Wakaf</option>
                         <option value="1 Qur'an A5 - Rp 50.000">1 Qur'an A5 - Rp 50.000</option>
                         <option value="2 Qur'an A5 - Rp 100.000">2 Qur'an A5 - Rp 100.000</option>
@@ -72,7 +149,7 @@
                     <textarea name="ket" id="ket" cols="30" rows="5" class="form-control"></textarea>
                 </div>
                 <div class="mb-3">
-                    <button class="btn btn-warning w-100">Bismillah, Saya niat wakaf Qur'an</button>
+                    <button class="btn btn-warning w-100"><i class="bi bi-send"></i> Kirim</button>
                 </div>
             </form>
 
@@ -83,7 +160,7 @@
     </section>
 
     <section>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container mb-3" data-aos="fade-up" data-aos-delay="100">
             <div class="alert alert-warning text-center mb-3">Hati-hati dari pihak yang tidak bertanggung jawab, Nomor
                 rekenig resmi hanya menggunakan rekening a.n <b>Yayasan Amal Islam Kariango</b></div>
             <h3 class="fw-bold text-center mb-3">Salurkan Donasi Terbaik Anda</h3>
@@ -96,40 +173,21 @@
                 <span class="fw-bold">a.n. Yayasan Amal Islam Kariango</span>
             </div>
         </div>
-    </section>
+        <hr>
 
-    <section class="">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <h5 class="fw-bold text-center">Silahkan bagi donatur yang ingin berdonasi menggunakan QR Code bisa scan
-                dibawah
-                ini: </h5>
+            <p class="fw-bold text-center">Bisa juga menggunakan QR Code berikut: </p>
             <div class="d-flex flex-column align-items-center mt-3">
                 <img id="qris-image" src="{{ asset('assets/img/qris.jpeg') }}" alt="" srcset=""
                     width="300px" class="mb-3">
                 <button id="download-qris" class="btn btn-sm btn-outline-secondary mb-3">Download QRIS</button>
-                <div class="d-flex flex-column">
-                    <span class="fw-bold">BAYAR LEBIH MUDAH DENGAN QRIS</span>
-                    <ul>
-                        <li><b>BUKA APLIKASI:</b> Buka aplikasi bank atau e-wallet kamu (misal: GoPay, OVO, Dana).</li>
-                        <li><b>PILIH QRIS:</b> Cari menu "QRIS" atau "Scan".</li>
-                        <li><b>SCAN:</b> Arahkan kamera ponselmu ke kode QR Yayasan.</li>
-                        <li><b>MASUKKAN NOMINAL:</b> Jika perlu, masukkan jumlah yang ingin dibayar.</li>
-                        <li><b>KONFIRMASI:</b> Periksa kembali jumlah dan nama merchant, lalu konfirmasi pembayaran.</li>
-                        <li><b>SELESAI:</b> Transaksi selesai!</li>
-                    </ul>
-                    <span class="fw-bold">TIPS:</span>
-                    <ul>
-                        <li>Pastikan koneksi internetmu stabil.</li>
-                        <li>Simpan aplikasi pembayaranmu di layar utama untuk akses cepat.</li>
-                        <li>Periksa kembali struk pembayaran sebagai bukti transaksi.</li>
-                    </ul>
-                </div>
+                <span class="fw-bold">TRANSFER LEBIH MUDAH DENGAN QRIS</span>
             </div>
         </div>
 
     </section>
 
-    <section>
+    <section class="light-background">
         <div class="container border-bottom pb-2" data-aos="fade-up" data-aos-delay="100">
             <div class="d-flex flex-column justify-content-center">
                 <p class="text-center">Konfirmasi bukti transfer guna mempermudah kami melaporkan progres pembangunan
@@ -139,24 +197,25 @@
                     Konfirmasi Donasi</a>
             </div>
         </div>
-        <div class="container mt-5" data-aos="fade-up" data-aos-delay="300">
-            <h5 class="text-center">Terimakasih atas donasi terbaik anda yang telah dititipkan di Yayasan Amal Islam
-                Kariango, Insyaallah akan berdampak manfaat besar untuk orang banyak</h5>
+        <div class="container mt-3" data-aos="fade-up" data-aos-delay="300">
+            <p class="text-center">Terimakasih atas donasi terbaik anda yang telah dititipkan di Yayasan Amal Islam
+                Kariango, Insyaallah akan berdampak manfaat besar untuk orang banyak</p>
         </div>
     </section>
 
     <section>
         <div class="container">
-            <h4 class="text-center">Lokasi lahan yang akan dibangunkan asrama santri:</h4>
-            {{-- <div class="d-flex flex-column align-items-center"> --}}
-            <div class="row">
-                <div class="d-flex align-items-center justify-content-center">
-                    <div class="col-sm-9 col-md-6">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d959.8996146328598!2d119.57118226955367!3d-5.081103999680981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMDQnNTIuMCJTIDExOcKwMzQnMTguNiJF!5e1!3m2!1sen!2sid!4v1754989133035!5m2!1sen!2sid"
-                            class="m-auto" width="100%" height="450" style="border:0;" allowfullscreen=""
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+            <h6 class="text-center">Lokasi lahan yang akan dibangunkan asrama santri:</h6>
+            <div class="row g-3">
+                <div class="col-sm-12 col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d959.8996146328598!2d119.57118226955367!3d-5.081103999680981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMDQnNTIuMCJTIDExOcKwMzQnMTguNiJF!5e1!3m2!1sen!2sid!4v1754989133035!5m2!1sen!2sid"
+                        class="m-auto" width="100%" height="450" style="border:0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h6 class="text-center">Dokumen Legalitas</h6>
+                    <img src="{{ asset('assets/img/dokumen-legalitas.png') }}" alt="" width="100%">
                 </div>
             </div>
             {{-- </div> --}}
@@ -171,6 +230,7 @@
             </div>
         </a>
     </section>
+
 @endsection
 
 @section('script')
@@ -200,8 +260,11 @@
         }
     </script>
 
+
     <script>
         const API_ENDPOINT = "{{ env('API_URL') }}";
+
+
     </script>
 
     <script>
@@ -275,8 +338,9 @@
                     // Callback jika permintaan berhasil
                     success: function(response) {
                         // Tampilkan pesan sukses dari server
-                        $("#statusMessage").removeClass('error').addClass('alert alert-success').text(
-                            response.message);
+                        $("#statusMessage").removeClass('error').addClass('alert alert-success')
+                            .text(
+                                response.message);
 
                         // Kosongkan form setelah berhasil
                         $("#donatur-form")[0].reset();
@@ -294,7 +358,8 @@
                         }
 
                         // Tampilkan pesan error
-                        $("#statusMessage").removeClass('success').addClass('alert alert-danger').text(
+                        $("#statusMessage").removeClass('success').addClass(
+                            'alert alert-danger').text(
                             errorMessage);
                     }
                 });

@@ -79,7 +79,7 @@
         </div>
 
         <div class="container mt-5">
-            <div class="row row-cols-2 row-cols-md-4 g-4">
+            <div class="row row-cols-2 row-cols-md-4 g-2">
                 <div class="col">
                     <img src="{{ asset('assets/img/foto-donasi/lahan-pembangunan/1.jpeg') }}" class="img-fluid gallery-img"
                         alt="Deskripsi Gambar 1" data-bs-toggle="modal" data-bs-target="#imageModal"
@@ -222,8 +222,8 @@
 
     <section>
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 g-3">
+            <div class="row g-3">
+                <div class="col-sm-12 col-md-6">
                     <h6 class="text-center">Lokasi pembangunan</h6>
                     <div class="row">
                         <div class="d-flex align-items-center justify-content-center">
@@ -236,7 +236,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 g-3">
+                <div class="col-sm-12 col-md-6">
                     <h6 class="text-center">Dokumen Legalitas</h6>
                     <img src="{{ asset('assets/img/dokumen-legalitas.png') }}" alt="" width="100%">
                 </div>
@@ -274,8 +274,8 @@
         }
     </script>
 
+    {{-- menampilkan galery --}}
     <script>
-        // menampilkan galery
         function showImage(element) {
             const fullscreenImage = document.getElementById('fullscreen-img');
             fullscreenImage.src = element.src;
