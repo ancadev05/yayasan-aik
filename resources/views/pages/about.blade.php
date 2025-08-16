@@ -28,7 +28,7 @@
             <h6 class="">Dokumen Legalitas</h6>
             <div class="row">
                 <div class="col-md-6 col-sm-10">
-                    <img src="{{ asset('assets/img/akte-yayasan.jpg') }}" alt="" width="100%">
+                    <img src="{{ asset('assets/img/dokumen-legalitas.png') }}" alt="" width="100%">
 
                 </div>
             </div>

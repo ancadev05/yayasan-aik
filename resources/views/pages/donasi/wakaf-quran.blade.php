@@ -1,17 +1,35 @@
 @extends('templates.landing-page')
 
 @section('meta')
-    <title>AIK | Wakaf Qur'an</title>
+    <title>Wakaf Al-Qur’an Online | Sedekah Jariyah Penuh Berkah</title>
 
     {{-- audiends google --}}
-    <meta name="description" content="Wakaf">
+    <meta name="description"
+        content="Mari berwakaf Al-Qur’an untuk para santri dan umat yang membutuhkan. Wakaf Anda menjadi sedekah jariyah yang pahalanya terus mengalir hingga hari kiamat.">
     <link rel="canonical" href="{{ $url }}">
 
     {{-- audiends sosial media --}}
-    <meta property="og:title" content="Wakaf Mushaf Quran">
-    <meta property="og:description" content="Ruangan Santri dan Masjid Butuh Perbaikan">
+    <meta property="og:title" content="Wakaf Al-Qur’an Online | Sedekah Jariyah Penuh Berkah">
+    <meta property="og:description"
+        content="Bantu sebarkan cahaya Al-Qur’an dengan wakaf mushaf untuk santri dan umat. Wakaf Anda menjadi sedekah jariyah yang tak terputus.">
     <meta property="og:image" content="{{ asset('assets/img/foto-donasi/wakaf-quran/wakaf-quran.png') }}">
     <meta property="og:url" content="{{ $url }}">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DonateAction",
+  "name": "Wakaf Al-Qur’an Online",
+  "description": "Wakaf Al-Qur’an untuk santri dan umat yang membutuhkan. Wakaf ini menjadi sedekah jariyah dengan pahala yang terus mengalir.",
+  "url": "{{ $url }}",
+  "image": "{{ asset('assets/img/foto-donasi/wakaf-quran/wakaf-quran.png') }}",
+  "recipient": {
+    "@type": "Organization",
+    "name": "Yayasan Amal Islam Kariango Maros",
+    "url": "https://yayasanamalislamkariango.com/"
+  }
+}
+</script>
 @endsection
 
 @section('content')
@@ -25,25 +43,18 @@
     </section>
 
     <section>
-        {{-- {{ env('API_URL') }} --}}
-        @php
-            // dd(env('API_URL'));
-        @endphp
-    </section>
-
-    <section>
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row mb-3">
                 <div class="col-sm-6 col-md-4">
-                    <iframe src="{{ asset('assets/img/foto-donasi/wakaf-quran/1.mp4?autoplay=1&mute=1') }}" width="100%"
-                        height="600" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <iframe src="{{ asset('assets/img/foto-donasi/wakaf-quran/2.mp4?autoplay=1&mute=1') }}" width="100%"
+                    <iframe src="{{ asset('assets/img/foto-donasi/wakaf-quran/1.mp4') }}" width="100%"
                         height="600" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <iframe src="{{ asset('assets/img/foto-donasi/wakaf-quran/3.mp4?autoplay=1&mute=1') }}" width="100%"
+                    <iframe src="{{ asset('assets/img/foto-donasi/wakaf-quran/2.mp4') }}" width="100%"
+                        height="600" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <iframe src="{{ asset('assets/img/foto-donasi/wakaf-quran/3.mp4') }}" width="100%"
                         height="600" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
@@ -230,7 +241,6 @@
             </div>
         </a>
     </section>
-
 @endsection
 
 @section('script')
@@ -263,8 +273,6 @@
 
     <script>
         const API_ENDPOINT = "{{ env('API_URL') }}";
-
-
     </script>
 
     <script>

@@ -6,9 +6,24 @@
 
 @section('content')
     <section>
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
             <h5 class="text-center">Atau daftar menjadi donatur tetep</h5>
-            <a href="#" class="btn btn-primary">DAFTAR</a>
+            <form action="" method="post">
+                @csrf
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama Lengkap<span class="text-danger">*</span></label>
+                    <input type="text" name="name" id="name" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="no_wa" class="form-label">No. WhatsApp<span class="text-danger">*</span></label>
+                    <input type="number" name="no_wa" id="no_wa" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="alamat" class="form-label">Alamat<span class="text-danger">*</span></label>
+                    <textarea name="alamat" id="alamat" cols="30" rows="3" class="form-control"></textarea>
+                </div>
+                {{-- <button class="btn btn-warning w-100">DAFTAR</button> --}}
+            </form>
         </div>
     </section>
 

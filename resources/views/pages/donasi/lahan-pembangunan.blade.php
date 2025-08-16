@@ -63,17 +63,16 @@
             <h5>Kondisi Lahan:</h5>
             <div class="row">
                 <div class="col-sm-12 col-md-4">
-                    <iframe src="{{ asset('assets/img/foto-donasi/lahan-pembangunan/3.mp4?autoplay=1&mute=1') }}"
-                        width="100%" height="500" frameborder="0" allow="autoplay; encrypted-media"
-                        allowfullscreen></iframe>
+                    <iframe src="{{ asset('assets/img/foto-donasi/lahan-pembangunan/3.mp4') }}"
+                        width="100%" height="500" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <iframe src="{{ asset('assets/img/foto-donasi/lahan-pembangunan/1.mp4') }}" width="100%"
-                        height="500" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        height="500" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <iframe src="{{ asset('assets/img/foto-donasi/lahan-pembangunan/2.mp4') }}" width="100%"
-                        height="500" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        height="500" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
