@@ -35,7 +35,7 @@
 
 @section('content')
     <section>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
             <div class="bg-warning p-3">
                 <span class="d-block text-center">Tak semua bisa berdonasi, tapi semua bisa berbagi. Yuk, bantu share
                     halaman ini!</span>
@@ -52,14 +52,14 @@
     </section>
 
     <section class="">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
             <h4 class="text-center">Mari Bersama Wujudkan Pondok Pesantren untuk Generasi Qur’ani Masa Depan</h4>
             <p class="text-center">Setiap rupiah yang Anda berikan adalah investasi pahala yang tak pernah putus.</p>
         </div>
     </section>
 
     <section>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
             <h5>Kondisi Lahan:</h5>
             <div class="row">
                 <div class="col-sm-12 col-md-4">
@@ -132,7 +132,7 @@
     </section>
 
     <section class=" ">
-        <div class="container light-background" data-aos="fade-up" data-aos-delay="100">
+        <div class="container light-background">
             <p>Kami bermimpi menghadirkan pondok pesantren yang layak, nyaman, dan penuh keberkahan — tempat para santri
                 menghafal Al-Qur’an, menuntut ilmu agama, dan kelak menjadi cahaya penerang di tengah masyarakat.</p>
             <p>Tetapi, mimpi ini membutuhkan dukungan besar dari hati-hati yang dermawan seperti Anda.</p>
@@ -140,7 +140,7 @@
     </section>
 
     <section>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
             <h5 class="text-center">Total dana yang dibutuhkan untuk penimbunan lahan</h5>
             <span class="d-block text-center" style="font-size: 30px;font-weight: bold">Rp 480.000.000,-</span>
 
@@ -159,7 +159,7 @@
 
 
     <section>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
             <div class="alert alert-warning text-center mb-3">Hati-hati dari pihak yang tidak bertanggung jawab, Nomor
                 rekenig resmi hanya menggunakan rekening a.n <b>Yayasan Amal Islam Kariango</b></div>
             <h3 class="fw-bold text-center mb-3">Salurkan Donasi Terbaik Anda</h3>
@@ -173,7 +173,7 @@
             </div>
         </div>
 
-         <div class="container" data-aos="fade-up" data-aos-delay="100">
+         <div class="container">
              <p class="text-center">Silahkan bagi donatur yang ingin berdonasi menggunakan QR Code bisa scan
                 dibawah
                 ini: </p>
@@ -204,7 +204,7 @@
     </section>
 
     <section>
-        <div class="container border-bottom pb-2" data-aos="fade-up" data-aos-delay="100">
+        <div class="container border-bottom pb-2">
             <div class="d-flex flex-column justify-content-center">
                 <p class="text-center">Konfirmasi bukti transfer guna mempermudah kami melaporkan progres pembangunan
                     melalui website ataupun sosial media</p>
@@ -220,7 +220,7 @@
     </section>
 
     <section>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
             <div class="row g-3">
                 <div class="col-sm-12 col-md-6">
                     <h6 class="text-center">Lokasi pembangunan</h6>

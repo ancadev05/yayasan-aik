@@ -18,11 +18,14 @@
     <section>
         <div class="container">
             <div class="bg-warning p-3">
-                <span class="d-block text-center">Tak semua bisa berdonasi, tapi semua bisa berbagi. Yuk, bantu share halaman ini!</span>
+                <span class="d-block text-center">Tak semua bisa berdonasi, tapi semua bisa berbagi. Yuk, bantu share
+                    halaman ini!</span>
                 <div class="d-flex justify-content-center mt-3">
                     <div class="btn-group">
-                        <button class="btn btn-success" onclick="shareToWhatsApp()"><i class="bi bi-whatsapp"></i> WhatsApp</button>
-                        <button class="btn btn-primary" onclick="shareToFacebook()"><i class="bi bi-facebook"></i> Facebook</button>
+                        <button class="btn btn-success" onclick="shareToWhatsApp()"><i class="bi bi-whatsapp"></i>
+                            WhatsApp</button>
+                        <button class="btn btn-primary" onclick="shareToFacebook()"><i class="bi bi-facebook"></i>
+                            Facebook</button>
                     </div>
                 </div>
             </div>
@@ -54,7 +57,7 @@
                         onclick="showImage(this)">
                 </div>
                 <div class="col">
-                    <img src="{{ asset('assets/img/foto-donasi/a-4.jpeg') }}" class="img-fluid gallery-img"
+                    <img src="{{ asset('assets/img/foto-donasi/a-4.png') }}" class="img-fluid gallery-img"
                         alt="Deskripsi Gambar 3" data-bs-toggle="modal" data-bs-target="#imageModal"
                         onclick="showImage(this)">
                 </div>
@@ -100,8 +103,8 @@
         <span class="d-block text-center" style="font-size: 30px;font-weight: bold">Rp 4.700.000,-</span>
 
         {{-- bar progress --}}
-        <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="0.19" aria-valuemin="0"
-            aria-valuemax="100">
+        <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="0.19"
+            aria-valuemin="0" aria-valuemax="100">
             <div class="progress-bar progress-bar-striped bg-warning" style="width: 0.19%">0,19%</div>
         </div>
 
@@ -109,7 +112,7 @@
 
     </div>
     <section>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
             <div class="alert alert-warning text-center mb-3">Hati-hati dari pihak yang tidak bertanggung jawab, Nomor
                 rekenig resmi hanya menggunakan rekening a.n <b>Yayasan Amal Islam Kariango</b></div>
             <h3 class="fw-bold text-center mb-3">Salurkan Donasi Terbaik Anda</h3>
@@ -125,7 +128,7 @@
     </section>
 
     <section class="">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
             <h5 class="fw-bold text-center">Silahkan bagi donatur yang ingin berdonasi menggunakan QR Code bisa scan
                 dibawah
                 ini: </h5>
@@ -156,7 +159,7 @@
     </section>
 
     <section>
-        <div class="container border-bottom pb-2" data-aos="fade-up" data-aos-delay="100">
+        <div class="container border-bottom pb-2">
             <div class="d-flex flex-column justify-content-center">
                 <p class="text-center">Konfirmasi bukti transfer guna mempermudah kami melaporkan progres pembangunan
                     melalui website ataupun sosial media</p>
@@ -165,7 +168,7 @@
                     Konfirmasi Donasi</a>
             </div>
         </div>
-        <div class="container mt-5" data-aos="fade-up" data-aos-delay="300">
+        <div class="container mt-5">
             <h5 class="text-center">Terimakasih atas donasi terbaik anda yang telah dititipkan di Yayasan Amal Islam
                 Kariango, Insyaallah akan berdampak manfaat besar untuk orang banyak</h5>
         </div>
@@ -173,17 +176,21 @@
 
     <section>
         <div class="container">
-            <h4 class="text-center">Lokasi pondok</h4>
+            <h5>Lokasi pondok</h5>
             {{-- <div class="d-flex flex-column align-items-center"> --}}
-            <div class="row">
-                <div class="d-flex align-items-center justify-content-center">
-                    <div class="col-sm-9 col-md-6">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d521.7521571386508!2d119.57137747202684!3d-5.0801269983699235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefb74b780b49d%3A0x121dcb4d6e8e0bb6!2sMasjid%20At-Thohir%20Pondok%20Pesantren%20Tahfidzul%20Quran%20Darul%20Haq%20Makkaraeng!5e0!3m2!1sen!2sid!4v1754522969842!5m2!1sen!2sid"
-                            class="m-auto" width="100%" height="450" style="border:0;" allowfullscreen=""
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+            <div class="row g-3">
+                {{-- <div class="d-flex align-items-center justify-content-center"> --}}
+                <div class="col-sm-9 col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d521.7521571386508!2d119.57137747202684!3d-5.0801269983699235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefb74b780b49d%3A0x121dcb4d6e8e0bb6!2sMasjid%20At-Thohir%20Pondok%20Pesantren%20Tahfidzul%20Quran%20Darul%20Haq%20Makkaraeng!5e0!3m2!1sen!2sid!4v1754522969842!5m2!1sen!2sid"
+                        class="m-auto" width="100%" height="450" style="border:0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+                <div class="col-sm-12 col-md-6">
+                    <h5>Dokumen Legalitas</h5>
+                    <img src="{{ asset('assets/img/dokumen-legalitas.png') }}" alt="" width="100%">
+                </div>
+                {{-- </div> --}}
             </div>
             {{-- </div> --}}
 

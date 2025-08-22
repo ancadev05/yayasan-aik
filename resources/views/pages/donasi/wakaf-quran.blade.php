@@ -34,7 +34,7 @@
 
 @section('content')
     <section>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
             <h4 class="text-center">WAKAF MUSHAF QUR'AN</h4>
             <p class="text-center">Raih pahala dari setiap ayat Qur'an yang dibaca</p>
             <h5 class="text-center">Dengan sedekah mulai Rp50.000,- Anda sudah membantu memberikan mushaf qur'an untuk para
@@ -43,7 +43,7 @@
     </section>
 
     <section>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
             <div class="row mb-3">
                 <div class="col-sm-6 col-md-4">
                     <iframe src="{{ asset('assets/img/foto-donasi/wakaf-quran/1.mp4') }}" width="100%"
@@ -171,7 +171,7 @@
     </section>
 
     <section>
-        <div class="container mb-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="container mb-3">
             <div class="alert alert-warning text-center mb-3">Hati-hati dari pihak yang tidak bertanggung jawab, Nomor
                 rekenig resmi hanya menggunakan rekening a.n <b>Yayasan Amal Islam Kariango</b></div>
             <h3 class="fw-bold text-center mb-3">Salurkan Donasi Terbaik Anda</h3>
@@ -186,7 +186,7 @@
         </div>
         <hr>
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
             <p class="fw-bold text-center">Bisa juga menggunakan QR Code berikut: </p>
             <div class="d-flex flex-column align-items-center mt-3">
                 <img id="qris-image" src="{{ asset('assets/img/qris.jpeg') }}" alt="" srcset=""
@@ -199,7 +199,7 @@
     </section>
 
     <section class="light-background">
-        <div class="container border-bottom pb-2" data-aos="fade-up" data-aos-delay="100">
+        <div class="container border-bottom pb-2">
             <div class="d-flex flex-column justify-content-center">
                 <p class="text-center">Konfirmasi bukti transfer guna mempermudah kami melaporkan progres pembangunan
                     melalui website ataupun sosial media</p>
