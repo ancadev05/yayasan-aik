@@ -23,4 +23,10 @@ class PagesDonasiController extends Controller
         $url = config('app.url') . '/wakaf-qruan';
         return view('pages.donasi.wakaf-quran', compact('url'));
     }
+
+    public function pembangunanMasjid()
+    {
+        $url = config('app.url') . '/pembangunan-masjid';
+        return view('pages.donasi.pembangunan-masjid-hafidz', compact('url'));
+    }
 }

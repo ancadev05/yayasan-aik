@@ -69,8 +69,29 @@
                 </div>
             </div>
 
+            {{-- pembangunan masjid --}}
+            <div class="col" data-aos="fade-up" data-aos-delay="100">
+                <div class="card shadow-sm">
+                    <img src="{{ asset('assets/img/foto-donasi/pembangunan-masjid/5.png') }}" alt="">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Pembangunan Masjid Pesantren Gratis Penghafal Qur'an</h5>
+                        <span><b>Rp 0,-</b> <small>terkumpul</small></span>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <a href="{{ route('pembangunan.masjid') }}" class="btn btn-sm btn-warning">Selengkapnya</a>
+                            {{-- <div class=" btn-group">
+                                <button class="btn btn-sm btn-success" onclick="shareToWhatsApp()"><i
+                                        class="bi bi-whatsapp"></i></button>
+                                <button class="btn btn-sm btn-primary" onclick="shareToFacebook()"><i
+                                        class="bi bi-facebook"></i></button>
+                            </div> --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {{-- guru ngaji berdaya --}}
-            <div class="col" data-aos="fade-up" data-aos-delay="300">
+            <div class="col" data-aos="fade-up" data-aos-delay="200">
                 <div class="card shadow-sm">
                     <img src="{{ asset('assets/img/foto-donasi/guru-ngaji/guru-ngaji.png') }}" alt="">
                     <div class="card-body">
