@@ -4,42 +4,63 @@
     <title>Donasi Pembangunan Masjid Penghafal Qur’an</title>
 
     {{-- audiends google --}}
-    <meta name="description" content="Bersama kita wujudkan Masjid Penghafal Qur’an. Setiap huruf yang dibaca para santri akan menjadi amal jariyah yang pahalanya mengalir untuk Anda. Mari berdonasi sekarang.">
+    <meta name="description"
+        content="Bersama kita wujudkan Masjid Penghafal Qur’an. Setiap huruf yang dibaca para santri akan menjadi amal jariyah yang pahalanya mengalir untuk Anda. Mari berdonasi sekarang.">
     <link rel="canonical" href="{{ $url }}">
 
     {{-- audiends sosial media --}}
     <meta property="og:title" content="Donasi Pembangunan Masjid Penghafal Qur’an">
-    <meta property="og:description" content="Bantu wujudkan Masjid Penghafal Qur’an. Amal jariyah tak terputus hingga hari akhir. Mari berdonasi sekarang.">
+    <meta property="og:description"
+        content="Bantu wujudkan Masjid Penghafal Qur’an. Amal jariyah tak terputus hingga hari akhir. Mari berdonasi sekarang.">
     <meta property="og:image" content="{{ asset('assets/img/foto-donasi/pembangunan-masjid/5.png') }}">
     <meta property="og:url" content="{{ $url }}">
 @endsection
 
 @section('content')
-    <section>
-        <div class="container">
-            <div class="bg-warning p-3">
-                <span class="d-block text-center">Tak semua bisa berdonasi, tapi semua bisa berbagi. Yuk, bantu share
-                    halaman ini!</span>
-                <div class="d-flex justify-content-center mt-3">
-                    <div class="btn-group">
-                        <button class="btn btn-success" onclick="shareToWhatsApp()"><i class="bi bi-whatsapp"></i>
-                            WhatsApp</button>
-                        <button class="btn btn-primary" onclick="shareToFacebook()"><i class="bi bi-facebook"></i>
-                            Facebook</button>
-                    </div>
+    <section class="container">
+        <div class="bg-warning p-3">
+            <span class="d-block text-center">Tak semua bisa berdonasi, tapi semua bisa berbagi. Yuk, bantu share
+                halaman ini!</span>
+            <div class="d-flex justify-content-center mt-3">
+                <div class="btn-group">
+                    <button class="btn btn-success" onclick="shareToWhatsApp()"><i class="bi bi-whatsapp"></i>
+                        WhatsApp</button>
+                    <button class="btn btn-primary" onclick="shareToFacebook()"><i class="bi bi-facebook"></i>
+                        Facebook</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container">
-        <div class="container mt-5">
-            <div class="row row-cols-12 row-cols-md-10 g-4">
-                <div class="col">
+    <div class="container">
+        <div class="row row-cols-12 row-cols-md-10 g-4 mb-4">
+            <div class="col d-flex justify-content-center">
+                <div>
+                    <h5 class="text-center">Gambar Masjid</h5>
                     <img src="{{ asset('assets/img/foto-donasi/pembangunan-masjid/4.jpeg') }}" class="img-fluid gallery-img"
                         alt="Deskripsi Gambar 1" data-bs-toggle="modal" data-bs-target="#imageModal"
                         onclick="showImage(this)">
                 </div>
+            </div>
+        </div>
+
+        <h5 class="text-center">Lokasi Pembangunan</h5>
+        <div class="row row-cols-2 g-3">
+            <div class="col">
+                <img src="{{ asset('assets/img/foto-donasi/pembangunan-masjid/6.jpeg') }}" class="img-fluid gallery-img"
+                    alt="Deskripsi Gambar 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+            </div>
+            <div class="col">
+                <img src="{{ asset('assets/img/foto-donasi/pembangunan-masjid/7.jpeg') }}" class="img-fluid gallery-img"
+                    alt="Deskripsi Gambar 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+            </div>
+            <div class="col">
+                <img src="{{ asset('assets/img/foto-donasi/pembangunan-masjid/8.jpeg') }}" class="img-fluid gallery-img"
+                    alt="Deskripsi Gambar 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+            </div>
+            <div class="col">
+                <img src="{{ asset('assets/img/foto-donasi/pembangunan-masjid/9.jpeg') }}" class="img-fluid gallery-img"
+                    alt="Deskripsi Gambar 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
             </div>
         </div>
 
@@ -54,7 +75,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="container">
         <h5>Detail Program:</h5>
