@@ -53,7 +53,7 @@
                 <div class="card shadow-sm">
                     <img src="{{ asset('assets/img/foto-donasi/wakaf-quran/wakaf-quran.png') }}" alt="">
                     <div class="card-body">
-                        <h5 class="fw-bold">Wakaf Qur'an</h5>
+                        <h5 class="fw-bold">WAKAF QUR'AN ATAS NAMA ORANG TUA</h5>
                         <span><b>Rp 0,-</b> <small>terkumpul</small></span>
                         <hr>
                         <div class="d-flex justify-content-between">

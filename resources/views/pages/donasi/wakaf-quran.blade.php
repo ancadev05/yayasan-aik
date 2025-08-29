@@ -35,7 +35,7 @@
 @section('content')
     <section>
         <div class="container">
-            <h4 class="text-center">WAKAF MUSHAF QUR'AN</h4>
+            <h4 class="text-center">WAKAF MUSHAF QUR'AN UNTUK ORANG TUA YANG TELAH TIADA</h4>
             <p class="text-center">Raih pahala dari setiap ayat Qur'an yang dibaca</p>
             <h5 class="text-center">Dengan sedekah mulai Rp50.000,- Anda sudah membantu memberikan mushaf qur'an untuk para
                 santri yang membutuhkan.</h5>
@@ -44,15 +44,15 @@
 
     <section>
         <div class="container">
-            <div class="row mb-3">
+            <div class="row mb-3 d-flex justify-content-center">
                 <div class="col-sm-6 col-md-4">
                     <iframe src="{{ asset('assets/img/foto-donasi/wakaf-quran/1.mp4') }}" width="100%"
                         height="600" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                {{-- <div class="col-sm-6 col-md-4">
                     <iframe src="{{ asset('assets/img/foto-donasi/wakaf-quran/2.mp4') }}" width="100%"
                         height="600" frameborder="0" allowfullscreen></iframe>
-                </div>
+                </div> --}}
                 <div class="col-sm-6 col-md-4">
                     <iframe src="{{ asset('assets/img/foto-donasi/wakaf-quran/3.mp4') }}" width="100%"
                         height="600" frameborder="0" allowfullscreen></iframe>
@@ -134,15 +134,15 @@
                             class="text-danger">*</span></label>
                     <input type="number" class="form-control" name="no_wa" required>
                 </div>
-                <div class="mb-3">
+                {{-- <div class="mb-3">
                     <label for="alamat" class="form-label fw-bold">Alamat<span class="text-danger">*</span></label>
                     <textarea name="alamat" id="" cols="30" rows="3" class="form-control" required></textarea>
-                </div>
+                </div> --}}
                 <div class="mb-3">
                     <label for="barang" class="form-label fw-bold">Pilih Jumlah Wakaf Mushaf Quran<span
                             class="text-danger">*</span></label>
                     <select name="barang" id="" class="form-select" required>
-                        <option value="">Jumlah Wakaf</option>
+                        <option value="">Jumlah Quran yang Ingin diwakafkan</option>
                         <option value="1 Qur'an A5 - Rp 50.000">1 Qur'an A5 - Rp 50.000</option>
                         <option value="2 Qur'an A5 - Rp 100.000">2 Qur'an A5 - Rp 100.000</option>
                         <option value="3 Qur'an A5 - Rp 150.000">3 Qur'an A5 - Rp 150.000</option>
@@ -152,13 +152,13 @@
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="" class="form-label fw-bold">Do'a Anda!</label>
+                    <label for="" class="form-label fw-bold">Do'a Anda untuk Orang Tua!</label>
                     <textarea name="doa" id="" cols="30" rows="10" class="form-control"></textarea>
                 </div>
-                <div class="mb-3">
+                {{-- <div class="mb-3">
                     <label for="ket" class="form-label fw-bold">Ket.</label>
                     <textarea name="ket" id="ket" cols="30" rows="5" class="form-control"></textarea>
-                </div>
+                </div> --}}
                 <div class="mb-3">
                     <button class="btn btn-warning w-100"><i class="bi bi-send"></i> Kirim</button>
                 </div>
@@ -237,7 +237,7 @@
     <section class="w-00 w-100">
         <a href="https://wa.me/6285299001213">
             <div class="conainer position-fixed bottom-0 bg-success w-100">
-                <h3 class="text-bg-success d-block text-center w-100 pt-2"><i class="bi bi-whatsapp"></i> CHAT ADMIN</h3>
+                <h3 class="text-bg-success d-block text-center w-100 pt-2"><i class="bi bi-whatsapp"></i> MAU SEDEKAH</h3>
             </div>
         </a>
     </section>

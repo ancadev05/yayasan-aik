@@ -200,7 +200,7 @@
     <section class="w-00 w-100">
         <a href="https://wa.me/6285299001213">
             <div class="conainer position-fixed bottom-0 bg-success w-100">
-                <h3 class="text-bg-success d-block text-center w-100 pt-2"><i class="bi bi-whatsapp"></i> CHAT ADMIN</h3>
+                <h3 class="text-bg-success d-block text-center w-100 pt-2"><i class="bi bi-whatsapp"></i> MAU SEDEKAH</h3>
             </div>
         </a>
     </section>
