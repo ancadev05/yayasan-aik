@@ -12,7 +12,7 @@
     <meta property="og:title" content="Donasi Pembangunan Masjid Penghafal Qur’an">
     <meta property="og:description"
         content="Bantu wujudkan Masjid Penghafal Qur’an. Amal jariyah tak terputus hingga hari akhir. Mari berdonasi sekarang.">
-    <meta property="og:image" content="{{ asset('assets/img/foto-donasi/pembangunan-masjid/5.png') }}">
+    <meta property="og:image" content="{{ asset('assets/img/foto-donasi/pembangunan-masjid/10.png') }}">
     <meta property="og:url" content="{{ $url }}">
 @endsection
 
