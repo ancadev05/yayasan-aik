@@ -12,6 +12,9 @@
     {{-- ck editor --}}
     <script src="{{ asset('vendor/ckeditor/ckeditor.js') }}"></script>
 
+    {{-- css costum --}}
+    <link rel="stylesheet" href="{{ asset('/css-costum/style.css') }}">
+
     <style>
         .main-container {
             width: 795px;
@@ -25,7 +28,7 @@
     <main>
 
         @include('templates.komponen-admin.navbar')
-        
+
         @yield('content')
     </main>
 

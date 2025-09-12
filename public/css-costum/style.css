@@ -1,0 +1,22 @@
+.hover  {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.hover:hover  {
+    transform: scale(1.05);
+    color: #f5bd01;
+}
+
+.col  {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.col:hover .card {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    color: #f5bd01;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

@@ -33,6 +33,9 @@
     <!-- Main CSS File -->
     <link href="{{ asset('/bootslander/assets/css/main.css') }}" rel="stylesheet">
 
+    {{-- css costum --}}
+    <link rel="stylesheet" href="{{ asset('/css-costum/style.css') }}">
+
     <style>
         ul {
             list-style-type: square;

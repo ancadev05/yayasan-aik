@@ -7,7 +7,7 @@
                 <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
             </div> --}}
 
-                <h5 class="text-center mt-5 py-3"><i>Dan pada harta-harta mereka ada hak untuk orang miskin yang meminta dan orang miskin yang tidak mendapat bagian. (QS. Az-Zariyat :19)</i></h5>
+                {{-- <h5 class="text-center mt-5 py-3"><i>Dan pada harta-harta mereka ada hak untuk orang miskin yang meminta dan orang miskin yang tidak mendapat bagian. (QS. Az-Zariyat :19)</i></h5> --}}
 
         </div>
     </div>

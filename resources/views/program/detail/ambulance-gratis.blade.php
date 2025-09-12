@@ -13,15 +13,22 @@
                         <img src="{{ asset('assets/img/gambar-program/ambulance.jpg') }}" alt="" class="w-50">
                     </div>
                     <h4 class="border-3 border-bottom">Deskripsi</h4>
-                    <p>Ambulance Kariango adalah layanan kesehatan berbentuk mobil ambulance <b>GRATIS</b> bagi masyarakat yang
-                        membutuhkan pertolongan darurat. Layanan ini disediakan oleh Yayasan Amal Islam Kariango untuk membantu
+                    <p>Ambulance Kariango adalah layanan kesehatan berbentuk mobil ambulance <b>GRATIS</b> bagi masyarakat
+                        yang
+                        membutuhkan pertolongan darurat. Layanan ini disediakan oleh Yayasan Amal Islam Kariango untuk
+                        membantu
                         penanganan kegawatdaruratan bagi masyarakat sekitar.</p>
-                    <p>Layanan ambulance gratis ini diperuntukkan bagi dhuafa dan seluruh lapisan masyarakat tanpa membedakan suku,
-                        ras, agama, atau golongan. Harapannya, selain memberikan bantuan kesehatan secara cuma-cuma, layanan ini
+                    <p>Layanan ambulance gratis ini diperuntukkan bagi dhuafa dan seluruh lapisan masyarakat tanpa
+                        membedakan suku,
+                        ras, agama, atau golongan. Harapannya, selain memberikan bantuan kesehatan secara cuma-cuma, layanan
+                        ini
                         juga menjadi wujud ukhuwah islamiyah dan kepedulian sosial.</p>
-                    <p>Ambulance Kariango mengedepankan sistem pelayanan yang ramah, cepat, tanggap, dan profesional. Saat ini,
-                        yayasan telah mengoperasikan 1 unit mobil ambulance gratis dan berkomitmen untuk terus berkembang demi
-                        menjangkau lebih banyak masyarakat. Ambulance ini didukung oleh tenaga kesehatan tersertifikasi, driver
+                    <p>Ambulance Kariango mengedepankan sistem pelayanan yang ramah, cepat, tanggap, dan profesional. Saat
+                        ini,
+                        yayasan telah mengoperasikan 1 unit mobil ambulance gratis dan berkomitmen untuk terus berkembang
+                        demi
+                        menjangkau lebih banyak masyarakat. Ambulance ini didukung oleh tenaga kesehatan tersertifikasi,
+                        driver
                         terlatih, serta peralatan medis standar seperti:</p>
                     <p>Emergency Kit</p>
                     <ul>
@@ -29,13 +36,16 @@
                         <li>Alat Pengaman Diri (APD)</li>
                         <li>Peralatan medis pendukung lainnya</li>
                     </ul>
-                    <p>Dengan motto "Melayani dengan Ikhlas", Ambulance Kariango terus berupaya memberikan bantuan bagi masyarakat
+                    <p>Dengan motto "Melayani dengan Ikhlas", Ambulance Kariango terus berupaya memberikan bantuan bagi
+                        masyarakat
                         yang membutuhkan, terutama dalam situasi darurat.</p>
 
-                        <h4 class="border-3 border-bottom">Layanan Kami</h4>
+                    <h4 class="border-3 border-bottom">Layanan Kami</h4>
 
-                        <h6>4. Pengantaran Jenazah</h6>
-                        <p class="alert alert-warning">Pelayanan mobil ambulance GRATIS Alfatihah jenis ini ialah pelayanan yang berfokus pada masalah pemulasaraan jenazah. Termasuk didalamnya pelayanan pengantaran jenazah dari rumah sakit menuju rumah duka.</p>
+                    <h6>4. Pengantaran Jenazah</h6>
+                    <p class="alert alert-warning">Pelayanan mobil ambulance GRATIS Alfatihah jenis ini ialah pelayanan yang
+                        berfokus pada masalah pemulasaraan jenazah. Termasuk didalamnya pelayanan pengantaran jenazah dari
+                        rumah sakit menuju rumah duka.</p>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="alert alert-info position-sticky top-0">
@@ -48,11 +58,43 @@
                             <li>Unit Eksklusif</li>
                         </ul>
 
-                        <a href="#" class="btn btn-sm btn-success"><span class="text-white"><i class="bi bi-whatsapp"> </i>WhatsApp</span></a>
+                        <a href="#" class="btn btn-sm btn-success"><span class="text-white"><i class="bi bi-whatsapp">
+                                </i>WhatsApp</span></a>
 
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="container mt-4">
+        <!-- Nav Tabs -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="deskripsi-tab" data-bs-toggle="tab" data-bs-target="#deskripsi"
+                    type="button" role="tab">Deskripsi</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tujuan-tab" data-bs-toggle="tab" data-bs-target="#tujuan" type="button"
+                    role="tab">Tujuan</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="jadwal-tab" data-bs-toggle="tab" data-bs-target="#jadwal" type="button"
+                    role="tab">Jadwal</button>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content p-3 border border-top-0" id="myTabContent">
+            <div class="tab-pane fade show active" id="deskripsi" role="tabpanel">
+                <p>Nasi Santri adalah bentuk alokasi dari amanah para donatur...</p>
+            </div>
+            <div class="tab-pane fade" id="tujuan" role="tabpanel">
+                <p>Tujuan program ini adalah membantu anak yatim, dhuafa, dan lainnya...</p>
+            </div>
+            <div class="tab-pane fade" id="jadwal" role="tabpanel">
+                <p>Distribusi dilakukan setiap hari Jumat secara rutin...</p>
+            </div>
+        </div>
+    </div>
 @endsection

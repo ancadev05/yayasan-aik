@@ -31,6 +31,9 @@
     <!-- Main CSS File -->
     <link href="{{ asset('/bootslander/assets/css/main.css') }}" rel="stylesheet">
 
+    {{-- css costum --}}
+    <link rel="stylesheet" href="{{ asset('/css-costum/style.css') }}">
+
     <!-- =======================================================
   * Template Name: Bootslander
   * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/

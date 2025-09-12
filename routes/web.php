@@ -1,13 +1,14 @@
 <?php
 
-use App\Http\Controllers\GaleryController;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProgramDetail;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PagesContrller;
-use App\Http\Controllers\PagesDonasiController;
 use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\ProgramController;
-use App\Http\Controllers\ProgramDetail;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UnitUsahaController;
+use App\Http\Controllers\PagesDonasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -59,7 +60,15 @@ Route::get('/pengembangan', function () {
 Route::get('ambulance-gratis', [ProgramDetail::class, 'ambulanceGratis'])->name('ambulance.gratis');
 
 // halaman donasi
-Route::get('gedung-santri', [PagesDonasiController::class, 'gedungSantri'])->name('gedung.santri');
-Route::get('pembebasan-lahan', [PagesDonasiController::class, 'pembebasanLahan'])->name('pembebasan.lahan');
-Route::get('wakaf-quran', [PagesDonasiController::class, 'wakafQuran'])->name('wakaf.quran');
-Route::get('pembangunan-masjid', [PagesDonasiController::class, 'pembangunanMasjid'])->name('pembangunan.masjid');
+Route::controller(PagesDonasiController::class)->group(function() {
+    Route::get('gedung-santri',  'gedungSantri')->name('gedung.santri');
+    Route::get('pembebasan-lahan',  'pembebasanLahan')->name('pembebasan.lahan');
+    Route::get('wakaf-quran',  'wakafQuran')->name('wakaf.quran');
+    Route::get('pembangunan-masjid',  'pembangunanMasjid')->name('pembangunan.masjid');
+});
+
+// route untuk unit usaha
+Route::controller(UnitUsahaController::class)->group(function() {
+    Route::get('panti-asuhan', 'pantiAsuhan')->name('panti.asuhan');
+    Route::get('pondok-tahfidz', 'pondokTahfidz')->name('pondok.tahfidz');
+});
