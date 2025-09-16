@@ -57,7 +57,7 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="index-page light-background">
 
     {{-- header --}}
     @include('components.header')

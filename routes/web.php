@@ -64,6 +64,7 @@ Route::controller(PagesDonasiController::class)->group(function() {
     Route::get('gedung-santri',  'gedungSantri')->name('gedung.santri');
     Route::get('pembebasan-lahan',  'pembebasanLahan')->name('pembebasan.lahan');
     Route::get('wakaf-quran',  'wakafQuran')->name('wakaf.quran');
+    Route::get('sponsor-tahfidz',  'sponsorTahfidz')->name('sponsor.tahfidz');
     Route::get('pembangunan-masjid',  'pembangunanMasjid')->name('pembangunan.masjid');
 });
 

@@ -90,6 +90,21 @@
                 </div>
             </div>
 
+            {{-- Sponsor tahfidx --}}
+            <div class="col" data-aos="fade-up" data-aos-delay="100">
+                <div class="card shadow-sm">
+                    <img src="{{ asset('assets/img/foto-donasi/pembangunan-masjid/10.png') }}" alt="">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Orang Tua Asuh Sponsor Tahfidz Saatnya Anda Mempunyai Seorang Santri Tahfidz</h5>
+                        <span><b>Rp 0,-</b> <small>terkumpul</small></span>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <a href="{{ route('sponsor.tahfidz') }}" class="btn btn-sm btn-warning">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {{-- guru ngaji berdaya --}}
             <div class="col" data-aos="fade-up" data-aos-delay="200">
                 <div class="card shadow-sm">

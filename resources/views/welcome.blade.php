@@ -5,8 +5,13 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Yayasan Amal Islam Kariango</title>
-    <meta name="description" content="">
+    <meta name="description" content="Yayasan Amal Islam Kariango">
     <meta name="keywords" content="yayasan amal islam kariango, yayasan amal islam kariango">
+
+    <meta property="og:title" content="Yayasan Amal Islam Kariango">
+    <meta property="og:description" content="Yayasan Amal Islam Kariango">
+    <meta property="og:image" content="{{ asset('assets/img/yayasan.webp') }}">
+    <meta property="og:url" content="https://yayasanamalislamkariango.com">
 
     <!-- Favicons -->
     {{-- <link href="{{ asset('/bootslander/assets/img/favicon.png') }}" rel="icon"> --}}
@@ -86,7 +91,7 @@
         <!-- /Gallery Section -->
 
         <!-- Testimonials Section -->
-        {{-- @include('sections.testimonials') --}}
+        @include('sections.testimonials')
         <!-- /Testimonials Section -->
 
         {{-- team --}}

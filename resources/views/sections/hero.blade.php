@@ -1,10 +1,12 @@
 <section id="hero" class="hero section dark-background">
-    <img src="{{ asset('bootslander/assets/img/hero-bg-2.jpg') }}" alt="" class="hero-bg">
+    {{-- <img src="{{ asset('bootslander/assets/img/hero-bg-2.jpg') }}" alt="" class="hero-bg"> --}}
+    <img src="{{ asset('assets/img/yayasan.webp') }}" alt="" class="hero-bg">
 
     <div class="container">
         <div class="row gy-4 justify-content-between">
             <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
-                <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+                {{-- <img src="{{ asset('bootslander/assets/img/hero-img.png') }}" class="img-fluid animated" alt=""> --}}
+                <img src="{{ asset('assets/img/hero-2.png') }}" class="img-fluid animated" alt="">
             </div>
 
             <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
