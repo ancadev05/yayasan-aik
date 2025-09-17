@@ -32,7 +32,7 @@ class PagesDonasiController extends Controller
 
     public function sponsorTahfidz()
     {
-        $url = config('app.url') . '/pembangunan-masjid';
+        $url = config('app.url') . '/sponsor-tahfidz';
         return view('pages.donasi.sponsor-tahfidz', compact('url'));
     }
 }

@@ -5,14 +5,14 @@
 
     {{-- audiends google --}}
     <meta name="description"
-        content="Mari berwakaf Al-Qur’an untuk para santri dan umat yang membutuhkan. Wakaf Anda menjadi sedekah jariyah yang pahalanya terus mengalir hingga hari kiamat.">
+        content="Kita hadir untuk meringankan beban mereka agar mereka tetap bisa belajar, menghafal, dan menuntut ilmu dengan tenang">
     <link rel="canonical" href="{{ $url }}">
 
     {{-- audiends sosial media --}}
-    <meta property="og:title" content="Wakaf Al-Qur’an Online | Sedekah Jariyah Penuh Berkah">
+    <meta property="og:title" content="Sponsor Tahfidz | Sedekah Jariyah Penuh Berkah">
     <meta property="og:description"
-        content="Bantu sebarkan cahaya Al-Qur’an dengan wakaf mushaf untuk santri dan umat. Wakaf Anda menjadi sedekah jariyah yang tak terputus.">
-    <meta property="og:image" content="{{ asset('assets/img/foto-donasi/wakaf-quran/wakaf-quran.png') }}">
+        content="Kita hadir untuk meringankan beban mereka agar mereka tetap bisa belajar, menghafal, dan menuntut ilmu dengan tenang">
+    <meta property="og:image" content="{{ asset('assets/img/foto-donasi/sponsor-tahfidz/sponsor-tahfidz.png') }}">
     <meta property="og:url" content="{{ $url }}">
 
     <script type="application/ld+json">
@@ -20,9 +20,9 @@
   "@context": "https://schema.org",
   "@type": "DonateAction",
   "name": "Wakaf Al-Qur’an Online",
-  "description": "Wakaf Al-Qur’an untuk santri dan umat yang membutuhkan. Wakaf ini menjadi sedekah jariyah dengan pahala yang terus mengalir.",
+  "description": "Kita hadir untuk meringankan beban mereka agar mereka tetap bisa belajar, menghafal, dan menuntut ilmu dengan tenang",
   "url": "{{ $url }}",
-  "image": "{{ asset('assets/img/foto-donasi/wakaf-quran/wakaf-quran.png') }}",
+  "image": "{{ asset('assets/img/foto-donasi/sponsor-tahfidz/sponsor-tahfidz.png') }}",
   "recipient": {
     "@type": "Organization",
     "name": "Yayasan Amal Islam Kariango Maros",
@@ -34,13 +34,19 @@
 
 @section('content')
     <div class="container my-3" data-aos="fade-up" data-aos-delay="300">
-        <div class="card shadow-sm">
-            <div class="card-body">
-                <h4 class="text-center fw-bold">ORANG TUA ASUH</h4>
-                <h4>Sponsor Tahfidz, Sponsor Pahala Tanpa Putus</h4>
-                <h5>Setiap hafalan mereka, pahala abadi untuk Anda.</h5>
-            </div>
-        </div>
+
+        {{-- <div class="card shadow-sm"> --}}
+            {{-- <div class="card-body"> --}}
+                {{-- <div class="container"> --}}
+                    {{-- <h4 class="text-center fw-bold">ORANG TUA ASUH</h4>
+                    <h4>Sponsor Tahfidz, Sponsor Pahala Tanpa Putus</h4>
+                    <h5>Setiap hafalan mereka, pahala abadi untuk Anda.</h5> --}}
+                    <img src="{{ asset('assets/img/foto-donasi/sponsor-tahfidz/sponsor-tahfidz.png') }}" alt=""
+                        width="100%">
+                {{-- </div> --}}
+            {{-- </div> --}}
+
+        {{-- </div> --}}
     </div>
 
     <div class="container mb-3" data-aos="fade-up" data-aos-delay="300">
@@ -118,6 +124,7 @@
         </div>
     </div>
 
+    {{-- konfirmasi donasi --}}
     <div class="container mb-3" data-aos="fade-up" data-aos-delay="300">
         <div class="card shadow-sm">
             <div class="card-body">
@@ -133,30 +140,30 @@
                     Kariango, Insyaallah akan berdampak manfaat besar untuk orang banyak</p>
             </div>
         </div>
-
     </div>
 
-    <section>
-        <div class="container">
-            <h6 class="text-center">Lokasi lahan yang akan dibangunkan asrama santri:</h6>
-            <div class="row g-3">
-                <div class="col-sm-12 col-md-6">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d959.8996146328598!2d119.57118226955367!3d-5.081103999680981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMDQnNTIuMCJTIDExOcKwMzQnMTguNiJF!5e1!3m2!1sen!2sid!4v1754989133035!5m2!1sen!2sid"
-                        class="m-auto" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <h6 class="text-center">Dokumen Legalitas</h6>
-                    <img src="{{ asset('assets/img/dokumen-legalitas.png') }}" alt="" width="100%">
+    {{-- alamat dan dokumen --}}
+    <div class="container mb-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-sm-12 col-md-6">
+                        <h6>Lokasi Pondok:</h6>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d959.8996146328598!2d119.57118226955367!3d-5.081103999680981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMDQnNTIuMCJTIDExOcKwMzQnMTguNiJF!5e1!3m2!1sen!2sid!4v1754989133035!5m2!1sen!2sid"
+                            class="m-auto" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h6>Dokumen Legalitas: </h6>
+                        <img src="{{ asset('assets/img/dokumen-legalitas.png') }}" alt="" width="100%">
+                    </div>
                 </div>
             </div>
-            {{-- </div> --}}
-
         </div>
-    </section>
+    </div>
 
-    <section class="w-00 w-100">
+    <section class="w-100">
         <a href="https://wa.me/6285299001213">
             <div class="conainer position-fixed bottom-0 bg-success w-100">
                 <h3 class="text-bg-success d-block text-center w-100 pt-2"><i class="bi bi-whatsapp"></i> MAU SEDEKAH</h3>

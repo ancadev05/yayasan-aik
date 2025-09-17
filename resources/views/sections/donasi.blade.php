@@ -93,7 +93,7 @@
             {{-- Sponsor tahfidx --}}
             <div class="col" data-aos="fade-up" data-aos-delay="100">
                 <div class="card shadow-sm">
-                    <img src="{{ asset('assets/img/foto-donasi/pembangunan-masjid/10.png') }}" alt="">
+                    <img src="{{ asset('assets/img/foto-donasi/sponsor-tahfidz/sponsor-tahfidz.png') }}" alt="">
                     <div class="card-body">
                         <h5 class="fw-bold">Orang Tua Asuh Sponsor Tahfidz Saatnya Anda Mempunyai Seorang Santri Tahfidz</h5>
                         <span><b>Rp 0,-</b> <small>terkumpul</small></span>
